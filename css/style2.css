@@ -1,0 +1,86 @@
+/*
+|----------------------------------------------------------------------------
+| Search Result
+|----------------------------------------------------------------------------
+*/
+.header h2 {
+  font-weight: 600;
+  color: #f3af00;
+}
+.sub-header p {
+  margin: 5px 0px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.sub-header p i.fa {
+  font-size: 20px;
+  margin: 0px 10px 0px 0px;
+}
+.clients {
+    background-color: rgba(42, 21, 114, 0.53);
+    padding: 15px 15px 10px 20px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 17px 4px rgba(10, 10, 10, 0.27);
+}
+label#location-error, label#category-error, label#keyword-error {
+  color: #fff;
+}
+#searchbutton2 {
+  border-radius: 0;
+  padding: 15px;
+  color: #8e83b4;
+  background-color: transparent;
+  border: 1px solid #8e83b4;
+  width: 100%;
+}
+.modalBtn {
+  border-radius: 0;
+  background: transparent;
+  color: #0275d8;
+  padding: 10px 15px;
+}
+.form-control {
+  border-radius: 0;
+}
+label.error {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
+.succesfulRegistration, .failedRegistration {
+  display: none;
+}
+@media (min-width: 893px) and (max-width: 991px) {
+  #advertisementCarousel.adPage {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #searchbutton2, #searchbutton {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .header h2 {
+    font-weight: 600;
+    color: #f3af00;
+    font-size: 21px;
+  }
+  .adSideBar h2 {
+    font-size: 25px;
+  }
+  .sub-header p i.fa {
+    font-size: 16px;
+    margin: 0px 3px 0px 0px;
+  }
+  .form-group {
+    margin-bottom: 0rem;
+  }
+  .sub-header p {
+    margin: 5px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+}

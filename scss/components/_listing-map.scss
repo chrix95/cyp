@@ -1,0 +1,354 @@
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 20. Listing Map Style
+|----------------------------------------------------------------------------
+*/
+.listing-map-block-fullwrap{
+	padding-top: 100px;
+}
+.outer-select-field{
+	position: relative;
+}
+.outer-select-input-box{
+	padding-left: 105px;
+	height: 45px;
+	width: 210px;
+}
+.input-dropedown-btn{
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    height: 65%;
+}
+.full-width{
+	.filter-form{
+		.form-group{
+			width: 285px;
+		}
+	}
+	.outer-select-input-box{
+		width: 270px;
+	}
+	.inner-row{
+		.form-group{
+			width: 58%;
+			text-align: right;
+		}
+	}
+}
+.listing-advance-filter.collapse{
+	display: none;
+}
+.listing-advance-filter.collapse.show{
+	display: block;
+}
+.filter-form{
+	position: relative;
+	padding: 35px 0 40px 0;
+	margin-bottom: 0;
+	.success-btn,
+	.danger-btn{
+		height: 45px;
+	}
+	.btn-group{
+		position: absolute;
+		top: 35px;
+		right: 0;
+		margin: 0;
+		button{
+			margin: 0 8px;
+			cursor: pointer;
+		}
+	}
+	.inner-row{
+		margin-top: 15px;
+		margin-top: 10px;
+		.range-input-block,
+		.listing-filter-options-block{
+			display: inline-block;
+		}
+		.range-input-block{
+			width: 41%;
+		}
+		.form-control{
+			width: 22%;
+			margin: 0 8px;
+			display: inline-block;
+		}
+		.form-control.last-item{
+			margin-right: 0;
+		}
+	}
+}
+.range-input-block{
+	input[type=range] {
+		/*removes default webkit styles*/
+		-webkit-appearance: none;
+		
+		/*fix for FF unable to apply focus style bug */
+		border: 1px solid white;
+		
+		/*required for proper track sizing in FF*/
+		width: 390px;
+	}
+	input[type=range]::-webkit-slider-runnable-track {
+		width: 390px;
+		height: 5px;
+		background: #ddd;
+		border: none;
+		border-radius: 3px;
+	}
+	input[type=range]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		border: 2px solid $orange_clr;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: $white_clr;
+		margin-top: -4px;
+	}
+	input[type=range]:focus {
+		outline: none;
+	}
+	input[type=range]:focus::-webkit-slider-runnable-track {
+		background: #ccc;
+	}
+
+	input[type=range]::-moz-range-track {
+		width: 390px;
+		height: 5px;
+		background: $border_clr ;
+		border: none;
+		border-radius: 0px;
+	}
+	input[type=range]::-moz-range-thumb {
+		border: 2px solid $orange_clr;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: $white_clr;
+	}
+
+	/*hide the outline behind the border*/
+	input[type=range]:-moz-focusring{
+		outline: 1px solid white;
+		outline-offset: -1px;
+	}
+
+	input[type=range]::-ms-track {
+		width: 390px;
+		height: 5px;
+		
+		/*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+		background: transparent;
+		
+		/*leave room for the larger thumb to overflow with a transparent border */
+		border-color: transparent;
+		border-width: 6px 0;
+
+		/*remove default tick marks*/
+		color: transparent;
+	}
+	input[type=range]::-ms-fill-lower {
+		background: #777;
+		border-radius: 10px;
+	}
+	input[type=range]::-ms-fill-upper {
+		background: #ddd;
+		border-radius: 10px;
+	}
+	input[type=range]::-ms-thumb {
+		border: 2px solid $orange_clr;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: $white_clr;
+	}
+	input[type=range]:focus::-ms-fill-lower {
+		background: #888;
+	}
+	input[type=range]:focus::-ms-fill-upper {
+		background: #ccc;
+	}
+}
+.option-with-icon{
+	font-family: FontAwesome, sans-serif;
+}
+
+.listing-filter-service-select-block{
+	h4,.form-check{
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.custom-control-description{
+		font-size: 12px;
+		color: $lime_dark;
+		line-height: 26px;
+	}
+}
+/*-- search result section --*/
+
+.serach-result-section{
+	padding: 0 0 100px 0;
+	.serach-result-section-title{
+		margin-bottom: 30px;
+		h4{
+			margin-bottom: 0;
+		}
+	}
+	.popular-listing-post{
+		margin-bottom: 30px;
+	}
+}
+.serach-result-section-inner{
+	padding: 50px 0 70px 0;
+}
+.item.list-group-item{
+    float: none;
+    width: 100%;
+	flex: 100%;
+    max-width: 100%;
+	display: block;
+	padding: 0 15px;
+	border: none;
+	margin-bottom: 30px;
+	.post-thumb{
+		width: 40%;
+		display: inline-block;
+	}
+	.post-details{
+		width: 58%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.popular-listing-post{
+		margin-bottom: 0;
+		.post-entry-block{
+			padding: 20px 20px;
+		}
+	}
+	.post-entry-block{
+		.post-author{
+			width: 10%;
+		}
+		.post-entry{
+			width: 88%;	
+			vertical-align: top;
+		}
+	}
+}
+.grid-controll-block{
+	button{
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		@include transition(0.3s);
+		&:hover,
+		&:active,
+		&:focus{
+			outline: 0;
+			color: $orange_clr;
+		}
+	}
+}
+
+/*--- listing map left and right align --*/
+.listing-map-container{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.listing-map-half{
+	.filter-form{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.listing-map-holder{
+		width: calc(100% - 950px);
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		display: inline-block;
+	}
+	.listing-map-container{
+		position: relative;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 990;
+		margin-bottom: 0px;
+	}
+	.listing-map-block{
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		z-index: 990;
+	}
+	.listing-filter-wrap{
+		width: 950px;
+		display: inline-block;
+	}
+	.filter-form{
+		.inner-row{
+			
+			.range-input-block{
+				width: 34%;
+			}
+			.form-group{
+				width: 65%;
+			}
+			.range-input-block input[type=range]{
+				width: 250px;
+			}
+		}
+		
+	}
+	.popular-listing-post{
+		.post-footer{
+			padding: 10px 15px;
+			h5{
+				font-size: 12px;
+			}
+		}
+	}
+}
+.listing-map-left{
+	.listing-map-holder{
+		float: left;
+	}
+	.listing-map-container{
+		left: 0;
+	}
+	.listing-filter-wrap{
+		float: right;
+	}
+}
+.listing-map-right{
+	.listing-map-holder{
+		float: right;
+	}
+	.listing-map-container{
+		left: auto;
+		right: 0;
+	}
+	.listing-filter-wrap{
+		float: left;
+	}
+}
+.listing-copy-right{
+	color: $white_clr;
+	margin-bottom: 0;
+	padding: 15px 80px;
+	background: #262626;
+	a{
+		@include transition(0.3s);
+		&:hover,
+		&:focus,
+		&:active{
+			color: $orange_clr;
+		}
+	}
+}

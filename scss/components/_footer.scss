@@ -1,0 +1,114 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 26. Footer Style
+|----------------------------------------------------------------------------
+*/
+footer{
+	background: #252525;
+}
+.footer-top-block{
+	padding: 70px 0 50px 0;
+}
+.footer-widget{
+	.footer-logo-block{
+		margin-bottom: 15px;
+	}
+	p{
+		color: $white_clr;
+		margin-bottom: 0;
+		i.fa{
+			margin-right: 4px;
+		}
+	}
+	p.address{
+		margin-bottom: 17px;
+	}
+}
+.footer-social-block{
+	span{
+		color: $white_clr;
+	}
+}
+ul.social{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	li{
+		list-style: none;
+		display: inline-block;
+		margin: 0 8px;
+		a{
+			color: $white_clr;
+			@include transition(0.3s);
+			&:hover,
+			&:active,
+			&:focus{
+				color: $orange_clr;
+			}
+		}
+	}
+}
+.footer-widget-title{
+	line-height: 30px;
+	color: $white_clr;
+	margin-bottom: 12px;
+}
+.footer-content-list{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+		a{
+			color: $white_clr;
+			line-height: 30px;
+			font-weight: 300;
+			&:hover,
+			&:active,
+			&:focus{
+				color: $orange_clr;
+			}
+		}
+	}
+}
+.footer-bottom-block{
+	padding: 18px 0;
+	border-top: 1px solid rgba(255,255,255,0.2);
+	.copyright-text{
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 0;
+		color: $white_clr;
+		a{
+			@include transition(0.3s);
+			&:hover,
+			&:active,
+			&:focus{
+				color: $orange_clr;
+			}
+		}
+	}
+	.footer-nav{
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		width: 100%;
+		text-align: right;
+		li{
+			display: inline-block;
+			margin: 0 10px;
+			a{
+				color: $white_clr;
+				@include transition(0.3s);
+				&:hover,
+				&:active,
+				&:focus{
+					color: $orange_clr;
+				}
+			}
+		}
+	}
+}

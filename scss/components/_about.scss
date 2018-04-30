@@ -1,0 +1,46 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 5. About Style
+|----------------------------------------------------------------------------
+*/
+.about-widget-section{
+	padding: 100px 0;
+}
+.about-widget-block{
+	padding: 40px 20px 33px 20px; 
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 27px -4px rgba(222, 222, 222, 0.75);
+	-moz-box-shadow: 0px 0px 27px -4px rgba(222, 222, 222, 0.75);
+	box-shadow: 0px 0px 27px -4px rgba(222, 222, 222, 0.75);
+	span[class^="ti-"]{
+		font-size: 35px;
+		color: $orange_clr;
+		display: block;
+		margin-bottom: 23px;
+	}
+	h4{
+		font-weight: 600;
+		line-height: 26px;
+		margin-bottom: 18px;
+	}
+	p{
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+}
+.about-info-section{
+	.about-info{
+		margin-top: 95px;
+		h2{
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		p{
+			font-weight: 300;
+		}
+	}
+}

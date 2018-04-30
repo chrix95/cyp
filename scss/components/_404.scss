@@ -1,0 +1,54 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 24. 404 Style
+|----------------------------------------------------------------------------
+*/
+.main-wrap-404{
+	padding: 220px 0 160px 0;
+}
+.content-404{
+	width: 322px;
+	margin: 0 auto 25px auto;
+	h3{
+		margin-bottom: 30px;
+		font-size: 26px;
+		line-height: 32px;
+	}
+	.danger-btn{
+		width: 210px;
+		i.fa{
+			font-weight: 700;
+			margin-right: 5px;
+		}
+	}
+}
+.content-wrap-404{
+	position: relative;
+	.text-404{
+		position: absolute;
+		left: -32px;
+		top: 45px;
+		&:before{
+			position: absolute;
+		    left: -53px;
+			top: -82px;
+			content: url('../images/misc/8.png');
+		}
+		h2{
+			position: relative;
+			font-size: 66px;
+			color: $white_clr;
+			z-index: 99;
+			line-height: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			span{
+				font-size: 28px;
+			}
+		}
+	}
+}

@@ -1,0 +1,195 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 21. Add listing Style
+|----------------------------------------------------------------------------
+*/
+input::placeholder {
+  color: rgba(17,17,17,0.44);
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(17,17,17,0.44);
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(17,17,17,0.44);
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(17,17,17,0.44);
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(17,17,17,0.44);
+}
+.form-single-element{
+	margin-bottom: 10px;
+}
+.add-listing-form.form-common{
+	.form-group{
+		margin: 0 0 17px 0;
+		label{
+			font-weight: 400;
+		}
+	}
+	.form-group.listing-price{
+		margin: 32px 0 0 0;
+	}
+	.promotional-video-block{
+		margin-bottom: 5px;
+	}
+	.social-profile-block{
+		margin-bottom: 10px;
+	}
+}
+.add-listing-tost-block{
+	p{
+		margin-bottom: 0;
+		padding: 24px 30px;
+		a{
+			color: $orange_clr;
+			font-wwight: 300;
+		}
+	}
+}
+.listing-block{
+	padding: 27px 30px 13px 30px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+	-moz-box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+	box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+}
+.listing-block>h4{
+	font-size: 22px;
+	font-weight:600;
+	margin-bottom: 20px;
+	line-height: 35px;
+}
+.businessinfo-right-block{
+	padding-top: 30px;
+}
+.listing-price{
+	margin-top: 30px;
+}
+.listing-features-block,
+.listing-additionalinfo-block{
+	padding-top: 5px;
+	table{
+		width: 100%;
+		table-layout: fixed; 
+	}
+}
+.listing-features-block>h5,
+.listing-additionalinfo-block{
+	margin-bottom: 10px;
+}
+.add-listing-form.form-common{
+	.listing-features-block,
+	.listing-additionalinfo-block{
+		.form-group label{
+			font-size: 12px;
+			margin-bottom: 2px;
+		}
+	}
+	.listing-features-block,
+	.listing-businesshour-block{
+		.custom-control-input:checked~.custom-control-indicator{
+			background-color: $soft_red_clr;
+			border-color: $soft_red_clr;
+		}
+	}
+	.form-group-file-type{
+		label{
+			width: 175px;
+			font-weight: 600;
+			font-size: 12px;
+		}
+	}
+	.attach-document-listing{
+		.form-group-file-type{
+			input{
+			width: 265px;
+			}
+			label{
+				width: 225px;
+			}
+		}
+	}
+	.prview-listing{
+		.form-group{
+			margin-bottom: 30px;
+		}
+	}
+}
+.listing-businesshour-block{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.listing-businesshour-block>h5{
+	margin-bottom: 15px;
+}
+.multiple-label-checkbox-block{
+	p,
+	label{
+		display: inline-block;
+	}
+	p{
+		margin-right: 35px;
+		margin-bottom: 5px;
+		strong{
+			width: 125px;
+			display: inline-block;
+		}
+		b{
+			width: 50px;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+	.custom-control{
+		margin-bottom: 0;
+	}
+}
+.form-group-file-type{
+	label,input,span{
+		display: inline-block;
+		font-size: 12px;
+	}
+	input{
+		width: 180px;
+	}
+}
+.prview-listing{
+	.text-center{
+		margin-bottom: 25px;
+	}
+	button[type="submit"]{
+		margin: 0 auto 16px auto;
+		display: block;
+	}
+}
+.listing-compose-block{
+	.mce-tinymce.mce-container.mce-panel{
+		padding-top: 0;
+		border-color: $border_clr;
+	}
+	.mce-panel{
+		background: $lime_gray_clr;
+		border-color: $border_clr;
+		
+	}
+	.mce-btn{
+		background: transparent;
+	}
+	.mce-btn-group:not(:first-child){
+		border-color: transparent;
+	}
+	.mce-branding-powered-by{
+		display: none;
+	}
+	.mce-resizehandle,
+	.mce-statusbar.mce-last{
+		display: none;
+	}
+}

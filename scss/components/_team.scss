@@ -1,0 +1,101 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 7. Team Style
+|----------------------------------------------------------------------------
+*/
+.team-section{
+	padding: 80px 0 100px 0;
+}
+.team-member-thumb-outer{
+	padding: 30px 20px;
+	-webkit-box-shadow: 0px -6px 31px -6px rgba(222, 222, 222, 0.75);
+	-moz-box-shadow: 0px -6px 31px -6px rgba(222, 222, 222, 0.75);
+	box-shadow: 0px -6px 31px -6px rgba(222, 222, 222, 0.75);
+}
+.team-member-block{
+	text-align: center;
+	&:hover{
+		.team-member-thumb{
+			ul{
+				top: 50%;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.overlay{
+			opacity: 1;
+			visibility: visible;
+		}
+		.team-member-info{
+			background: $orange_clr;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			h4,p{
+				color: $white_clr;
+			}
+		}
+	}
+}
+.team-member-thumb{
+	position: relative;
+	height: 180px;
+	width: 180px;
+	text-align: center;
+	margin: 0 auto;
+	img{
+		border-radius: 50%;
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 60%;
+		left: 0;
+		right: 0;
+		z-index: 99;
+		opacity: 0;
+		visibility: hidden;
+		@include transition(0.3s);
+		li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 8px;
+			a{
+				color: $white_clr;
+				@include transition(0.3s);
+				&:hover,
+				&:focus,
+				&:active{
+					color: $lime_dark;
+				}
+			}
+		}
+	}
+	.overlay{
+		border-radius: 50%;
+		background: rgba(253,136,10,.7);
+		opacity: 0;
+		visibility: hidden;
+		@include transition(0.3s);
+	}
+}
+.team-member-info{
+	padding: 25px 0 20px 0;
+	@include transition(0.3s);
+	h4,p{
+		margin-bottom: 0;
+		@include transition(0.3s);
+	}
+	p{
+		font-size: 12px;
+		line-height: 22px;
+	}
+	-webkit-box-shadow:  0px 2px 22px -9px rgba(101, 101, 101, 0.75);
+	-moz-box-shadow:  0px 2px 22px -9px rgba(101, 101, 101, 0.75);
+	box-shadow:  0px 2px 22px -9px rgba(101, 101, 101, 0.75);
+}

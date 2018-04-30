@@ -1,0 +1,17 @@
+/*
+|----------------------------------------------------------------------------
+| 13. Single Style
+|----------------------------------------------------------------------------
+*/
+
+@import "./variable";
+@import "./mixins";
+
+blockquote{
+	color: $white_clr;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	padding: 30px;
+	background: rgba(0, 0, 0, 0.34);
+}

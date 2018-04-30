@@ -1,0 +1,412 @@
+/*
+|----------------------------------------------------------------------------
+| 1. General Style
+|----------------------------------------------------------------------------
+*/
+
+@import "./variable";
+@import "./mixins";
+html, html a {
+    text-rendering: optimizeLegibility !important;
+ 	-webkit-font-smoothing: antialiased !important;
+}
+.listing-post-map{
+	height: 502px;
+}
+body{
+	width: 100%;
+    height: 100%;
+	font-family: $poppins_font;
+	font-size: $default_fontSize;
+	line-height: $default_lineHeight;
+	color: $lime_dark;
+	font-weight: 400;
+	background: transparent;
+	text-rendering: optimizeLegibility;
+}
+p {
+	line-height: $default_lineHeight;
+	font-size: $default_fontSize;
+	margin-bottom: 30px;
+	font-family: $poppins_font;
+	
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	line-height: 100%;
+	font-weight: 500;
+	font-family: $poppins_font;
+}
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 34px;
+}
+h3 {
+	font-size: 32px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+img {
+	object-fit: cover;
+	display: inline-block;
+}
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+	
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $lime_dark;
+		outline: 0;
+	}
+	@include transition(0.4s);
+}
+button{
+	font-family: $poppins_font;
+}
+iframe {
+    border: 0;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(17,17,17,0.7);
+}
+.social-with-label{
+	span{
+		margin-right: 10px;
+	}
+	ul,span{
+		display: inline-block;
+	}
+	ul.social{
+		width: calc(100% - 120px);
+	}
+}
+/*--- section title style --*/
+.section-title{
+	text-align: center;
+	margin-bottom: 45px;
+	h2{
+		margin-bottom: 0;
+		line-height: 62px;
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+/*--- all button style --*/
+.icon-btn{
+	width: 177px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+	text-align: center;
+	color: $white_clr;
+	border: none;
+	&:hover,
+	&:focus,
+	&:active{
+		color: $white_clr;
+		outline: 0;
+	}
+	i.fa{
+		margin-right: 5px;
+	}
+}
+
+a[class^='icon-btn-']{
+	width: 130px;
+	height: 45px;
+	line-height: 45px;
+	color: $white_clr;
+	border-radius: 3px;
+	margin: 0 5px;
+	i.fa{
+		margin-right: 5px;
+	}
+}
+.icon-btn-fb{
+	background: $facebook_clr;
+}
+.icon-btn-tw{
+	background: $twitter_clr;
+}
+.icon-btn-gplus{
+	background: $google_plus_clr;
+}
+.adining-listing-btn{
+	background-color: rgba(253, 136, 10, 1);
+	&:hover,
+	&:focus,
+	&:active{
+		background-color: rgba(253, 136, 10, 0.78);
+	}
+}
+.explore-listing-btn{
+	background-color: $success_clr;
+	&:hover,
+	&:focus,
+	&:active{
+		background-color: rgba(127, 186, 0, 0.78);
+	}
+}
+.listing-btn-cmn,
+.contact-btn{
+	width: 117px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	color: $white_clr;
+	background-color: rgba(253, 136, 10, 1);
+	&:hover,
+	&:focus,
+	&:active{
+		color: $white_clr;
+		background-color: rgba(253, 136, 10, 0.78);
+	}
+}
+.pricing-btn{
+	width: 213px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 5px;
+	text-align: center;
+	color: $lime_dark;
+	border: 1px solid $border_clr;
+	background: transparent;
+	@include transition(0.3s);
+	&:hover,
+	&:focus,
+	&:active{
+		color: $white_clr;
+		border-color: $orange_clr;
+		background: $orange_clr;
+	}
+}
+.form-btn{
+	width: 100%;
+	height: 45px;
+	color: $white_clr;
+	background: $orange_clr;
+	border: none;
+	cursor: pointer;
+	&:focus{
+		outline: 0;
+	}
+}
+.rate-btn{
+	width: 64px;
+	height: 26px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 12px;
+	border: 1px solid $success_clr;
+	i.fa{
+		margin-right: 5px;
+	}
+	margin-right: 5px;
+}
+.listing-btn-large{
+	width: 185px;
+	height: 45px;
+	line-height: 45px;
+	background: $orange_clr;
+	color: $white_clr;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	&:focus,
+	&:active,
+	&:hover{
+		outline: 0;
+		color: $white_clr;
+	}
+	
+}
+.success-btn,
+.danger-btn{
+	width: 110px;
+	height: 40px;
+	border-radius: 3px;
+	line-height: 40px;
+	color: $white_clr;
+	border: none;
+	text-align: center;
+	&:focus,
+	&:active,
+	&:hover{
+		outline: 0;
+		color: $white_clr;
+	}
+}
+.success-btn{
+	background: $success_clr;
+}
+.danger-btn{
+	background: $orange_clr;
+}
+.border-btn{
+	height: 34px;
+	width: 95px;
+	border: 1px solid $border_clr;
+	text-align: center;
+	line-height: 31px;
+}
+
+/*-- social-share --*/
+.social-share-block{
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+	&:hover{
+		.social-list{
+			opacity: 1;
+			visibility: visible;
+		}
+		button{
+			color: $orange_clr;
+		}
+	}
+	button{
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		color: $white_clr;
+		padding-right: 0;
+		@include transition(0.3s);
+		&:hover,
+		&:focus,
+		&:active{
+			border: none;
+			outline: 0;
+		}
+	}
+	
+}
+.social-list{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: absolute;
+	left: 30px;
+	top: 0;
+	width: 170px;
+	background: $white_clr;
+	padding: 3px 0;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(0.3s);
+	li{
+		list-style: none;
+		margin: 0 5px;
+		display: inline-block;
+		a{
+			color: $lime_dark;
+			@include transition(0.3s);
+			&:hover,
+			&:active,
+			&:focus{
+				color: $orange_clr;
+			}
+		}
+	}
+}
+/*--- social icon style --*/
+ul.social{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	li{
+		list-style: none;
+		display: inline-block;
+		margin: 0 8px;
+		a{
+			color: $white_clr;
+			@include transition(0.3s);
+			&:hover,
+			&:active,
+			&:focus{
+				color: $orange_clr;
+			}
+		}
+	}
+}
+.gallary-section{
+	padding: 100px 0 70px 0;
+}
+.gallary-image{
+	margin-bottom: 30px;
+}
+/*-- Blog Common Style -- */
+.post-thumb{
+	position: relative;
+}
+
+.post-model{
+	width: 80%;
+	max-width: none;
+	position: relative;
+	.close{
+		position: absolute;
+		right: -20px;
+		top: -10px;
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		background: $orange_clr;
+		text-align: center;
+		color: $white_clr;
+		line-height: 30px;
+		z-index: 9;
+		opacity: 1;
+		font-size: 20px;
+		font-weight: 400;
+		&:hover,
+		&:focus,
+		&:active{
+			outline: 0;
+		}
+	}
+	.modal-content{
+		background: transparent;
+	}
+	.popular-listing-post{
+		height: 502px;
+	}
+	.popular-listing-post{
+		.post-thumb{
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+/*** Form and inputs ***/
+input:not([type=submit]):not([type=radio]):not([type=checkbox]), select, textarea{
+    &:focus{
+        outline: none;
+    }
+}

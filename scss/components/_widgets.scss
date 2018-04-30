@@ -1,0 +1,178 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 12. Widgets Style
+|----------------------------------------------------------------------------
+*/
+.sidebar{
+	.widget{
+		margin-bottom: 30px;
+		-webkit-box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+		-moz-box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+		box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+		span{
+			font-size: 12px;
+		}
+	}
+	.widget-body{
+		padding: 25px 30px 25px 30px;
+	}
+}
+.widget.map-widget{
+	margin-bottom: 0;
+}
+.contact-widget{
+	padding: 25px 30px 13px 30px;
+	p{
+		margin-bottom: 12px;
+		line-height: 20px;
+		i.fa{
+			display: inline-block;
+			width: 15px;
+			vertical-align: top;
+			line-height: 20px;
+		}
+		span{
+			display: inline-block;
+			width: calc(100% - 25px);
+		}
+	}
+	ul.social{
+		margin: 5px 0 15px 0;
+		li{
+			margin: 0 4px 0 0;
+			a{
+				width: 30px;
+				height: 30px;
+				border: 1px solid $orange_clr;
+				border-radius: 50%;
+				color: $lime_dark;
+				text-align: center;
+				line-height: 30px;
+				font-size:  12px;
+				@include transition(0.3s);
+				&:hover{
+					color: $orange_clr;
+				}
+			}
+		}
+	}
+}
+.widget-title{
+	padding: 18px 30px;
+	position: relative;
+	-webkit-box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+	-moz-box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+	box-shadow: 0px 1px 11px -1px rgba(216, 216, 216, 0.75);
+	h5{
+		margin-bottom: 0;
+		font-weight: 600;
+	}
+}
+.businesshours-widget{
+	.widget-body{
+		padding-bottom: 20px;
+	}
+	.current-schedule{
+		position: absolute;
+		top: 18px;
+		right: 20px;
+		color: $success_clr;
+	}
+	.current-schedule.lt-clo{
+		color: $danger_clr;
+	}
+	.hrs-row{
+		clear: both;
+		width: 100%;
+		display: inline-block;
+		.day{
+			float: left;
+			line-height: 20px;
+		}
+		.hours{
+			float: right;
+			line-height: 20px;
+		}
+	}
+}
+.ad-widget{
+	padding: 10px;
+}
+.othersinfo-widget{
+	.widget-body{
+		padding-bottom: 15px;
+	}
+	.othersinfo-row{
+		clear: both;
+		width: 100%;
+		display: inline-block;
+		.left-info{
+			float: left;
+		}
+		.right-info{
+			float: right;
+		}
+		a{
+			color: $orange_clr;
+		}
+	}
+}
+.contact-form-wdiget{
+	.form-common{
+		margin-bottom: 0;
+		.form-group input.form-control{
+			padding-left: 20px;
+		}
+		textarea{
+			resize: none;
+		}
+		.listing-btn-large{
+			width: 100%;
+		}
+	}
+}
+
+.widget.listingpost-widget{
+	box-shadow: none;
+}
+
+.author-widget{
+	text-align: center;
+	.thumb{
+		img{
+			height: 120px;
+			width: 120px;
+			border-radius: 50%;
+			display: inline-block;
+			margin-bottom: 15px;
+		}
+	}
+	.info{
+		margin-bottom: 10px;
+		h4{
+			margin-bottom: 0;
+			font-weight: 600;
+		}
+	}
+	.btn-group{
+		a{
+			margin: 0 5px;
+		}
+	}
+}
+.author-widget-body{
+	padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 22. Pagination Style
+|----------------------------------------------------------------------------
+*/
+.pagination{
+	text-align: center;
+	display: block;
+	.page-numbers{
+		padding: 10px 20px;
+		margin: 0 8px;
+		border: 1px solid $border_clr;
+		@include transition(0.3s);
+		&:hover{
+			background: $orange_clr;
+			color: $white_clr;
+		}
+	}
+	.page-numbers.current{
+		padding: 14px 20px;
+		background: $orange_clr;
+		color: $white_clr;
+	}
+}

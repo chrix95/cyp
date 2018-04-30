@@ -1,0 +1,78 @@
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 19. Map Style
+|----------------------------------------------------------------------------
+*/
+
+.add-listing-map {
+    height: 190px;
+    margin-bottom: 25px;
+}
+
+.map-widget {
+    height: 220px;
+    width: 100%;
+}
+
+.map-full-width-one {
+    height: 350px;
+}
+
+.listing-map-block {
+    height: 350px;
+}
+
+.infoBox {
+    >img {
+        position: absolute !important;
+        top: 5px;
+        right: 5px;
+        z-index: 1;
+    }
+    .map-marker-post {
+        border-radius: 3px;
+        background-color: #ffffff;
+        overflow: hidden;
+        display: block;
+        .post-thumb {
+            display: block;
+        }
+        .listing-info {
+            top: 2px;
+            left: 10px;
+            h4 {
+                font-size: 12px;
+            }
+        }
+        .rating-area {
+            color: $orange_clr;
+            bottom: 8px;
+            left: 10px;
+            font-size: 7px;
+        }
+        .post-details {
+            display: block;
+            padding: 5px 10px;
+            .fa {
+                color: $orange_clr;
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+.cluster-marker{
+	position: absolute;
+	font-size: 25px;
+	color: #fff;
+	line-height: 70px;
+	text-align: center;
+	height: 90px;
+	width: 70px;
+	z-index: 999;
+	font-weight: 700;
+	background: url(../images/markerholder.png);
+}

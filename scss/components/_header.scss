@@ -1,0 +1,205 @@
+/*---------------------------------------
+2. Main header Style
+---------------------------------------*/
+.navbar-brand{
+	position: relative;
+	left: 60px;
+}
+.navbar-nav{
+	li{
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.user-panel{
+	width: 285px;
+    float: right;
+    position: fixed;
+    right: 0;
+    z-index: 1032;
+	padding: 30px 0;
+	min-height: 80px;
+	transition: all 0.3s ease;
+	a{
+		display: inline-block;
+		margin: 0 24px;
+		color: $white_clr;
+		@include transition(0.3s);
+		&:hover,
+		&:focus,
+		&:active{
+			color: $orange_clr;
+		}
+	}
+}
+.navbar-toggle-btn{
+	color: $white_clr;
+}
+.navbar-toggler{
+	border: 1px solid $white_clr;
+	border-radius: 0;
+	&:hover,
+	&:focus{
+		outline: 0;
+	}
+}
+.main-nav-two-section{
+	.navbar-toggle-btn{
+		color: $lime_dark;
+	}	
+	.navbar-toggler{
+		border: 1px solid $lime_dark;
+	}
+}
+
+.dropdown-toggle::after{
+	border: none;
+    position: absolute;
+    top: 25%;
+	right: 10px;
+	content:"\f107";
+	font-family:'FontAwesome';
+}
+
+.navbar {
+    min-height: 80px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+	background: rgba(0,0,0,0.33);
+    .navbar-nav {
+		.nav-link{
+			padding: 10px 20px;
+			color: $white_clr;
+			position: relative;
+			@include transition(0.3s);
+			&:hover,
+			&:focus,
+			&:active{
+				color: $orange_clr;
+			}
+		}
+        >li {
+            >a {
+                font-size: 14px;
+                padding: 10px 21px;
+            }
+        }
+        .dropdown-menu {
+            li {
+                >a {
+                    position: relative;
+                    padding: 5px 16px 0px;
+                    &:hover {
+                        background-color: transparent;
+                        box-shadow: none;
+						color: $orange_clr;
+                    }
+                }
+            }
+        }
+        .dropdown {
+            .dropdown-menu {
+                top: 100%;
+                margin-top: 0;
+                padding: 15px 0;
+                border-radius: 0px;
+				min-width: 160px;
+				font-size: 14px;
+				border-radius: 0;
+                .dropdown-menu {
+                    top: 0;
+                    left: 100%;
+                }
+            }
+            &:hover {
+                >.dropdown-menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+	.navbar-collapse{
+		width: 65%;
+	}
+	.navbar-brand{
+		display: inline-block;
+	}
+}
+
+.main-nav-section{
+	&.nav-affix {
+		.navbar{
+			min-height: 60px;
+			padding: 10px 0;
+			background: rgba(0,0,0,0.77);
+			box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+		}
+		.user-panel{
+			padding: 15px 0;
+			min-height: 60px;
+		}
+	}
+ }
+.main-nav-section.main-nav-two-section{
+	.user-panel a{
+		margin: 0 10px;
+	}
+	.border-btn{
+		border: 1px solid $orange_clr;
+		color: $lime_dark;
+		@include transition(0.3s);
+		&:hover,
+		&:focus,
+		&:active{
+			color: $orange_clr;
+			}
+	}
+	.user-addlisting-btn{
+		height: 34px;
+		width: 110px;
+		text-align: center;
+		line-height: 32px;
+		color: $white_clr;
+		background: $orange_clr;
+	}
+	.navbar {
+		background: rgba(255,255,255,1);
+		.navbar-nav {
+			.nav-link{
+			color: $lime_dark;
+			@include transition(0.3s);
+			&:hover,
+			&:focus,
+			&:active{
+				color: $orange_clr;
+				}
+			}
+		}
+	}
+	&.nav-affix {
+		.navbar{
+			min-height: 60px;
+			padding: 10px 0;
+			box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+@media (min-width: 992px){
+	.dropdown .dropdown-menu {
+		-webkit-transition: all 150ms linear;
+		-moz-transition: all 150ms linear;
+		-o-transition: all 150ms linear;
+		-ms-transition: all 150ms linear;
+		transition: all 150ms linear;
+		margin-top: -20px;
+		opacity: 0;
+		visibility: hidden;
+		display: block;
+	}
+}

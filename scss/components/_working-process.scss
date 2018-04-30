@@ -1,0 +1,41 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 10. Working Process Style
+|----------------------------------------------------------------------------
+*/
+.working-process-section{
+	.section-title{
+		h2,p{
+			color: $white_clr;
+		}
+	}
+	position: relative;
+	padding: 80px 0;
+	background: url(../images/background/1.jpg) center center no-repeat;
+}
+.working-process-block{
+	text-align: center;
+	padding: 50px;
+	background: rgba(255,255,255,.2);
+	span[class^="ti-"]{
+		font-size: 35px;
+		color: $orange_clr;
+		margin-bottom: 25px;
+		display: block;
+	}
+	h4{
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 15px;
+		color: $white_clr;
+	}
+	p{
+		margin-bottom: 0;
+		color: $white_clr;
+		font-weight: 300;
+	}
+}

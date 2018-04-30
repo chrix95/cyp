@@ -1,0 +1,62 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 9. Popular Cities Style
+|----------------------------------------------------------------------------
+*/
+.popular-cities-section{
+	padding-top: 80px;
+}
+.popular-cities-block{
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+	.overlay{
+		background: rgba(0,0,0,0.4);
+	}
+	h4{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		margin: 0;
+		z-index: 9;
+		color: $white_clr;
+		transform: translateY(-10px);
+		@include transition(0.3s);
+		a{
+			@include transition(0.3s);
+			&:hover{
+				color: $orange_clr;
+			}
+		}
+		
+	}
+	&:hover{
+		h4{
+			top: 35%;
+		}
+		.popular-cities-info-block{
+			top: 45%;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+.popular-cities-info-block{
+	position: absolute;
+	top: 60%;
+	z-index: 99;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(0.3s);
+	p{
+		margin-bottom: 0;
+		color: $white_clr;
+	}
+}

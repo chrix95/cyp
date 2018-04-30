@@ -1,0 +1,66 @@
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 23. Contact Style
+|----------------------------------------------------------------------------
+*/
+
+.contact-section {
+    .contact-widget {
+        padding: 0;
+        p {
+            margin-bottom: 28px;
+            span {
+                width: calc(100% - 70px);
+            }
+            i.fa {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                color: $white_clr;
+                margin-right: 10px;
+                background: $orange_clr;
+            }
+        }
+        p.last-type {
+            margin-bottom: 20px;
+        }
+        ul.social {
+            margin: 0;
+            li {
+                margin: 0 10px 0 0;
+                a {
+                    border: none;
+                    height: auto;
+                    width: auto;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.contactinfo-block>h4 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.input-success {
+    margin-top: 10px;
+    background-color: #16a085;
+    color: #fff;
+    padding: 3px 15px;
+    display: none;
+}
+
+.input-error {
+    margin-top: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 3px 15px;
+    display: none;
+}

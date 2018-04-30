@@ -1,0 +1,24 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 15. Call to action Style
+|----------------------------------------------------------------------------
+*/
+.call-to-action-section{
+	text-align: center;
+	padding: 70px 0 90px 0;
+	background: $lime_gray_clr;
+	h2{
+		line-height: 45px;
+		margin-bottom: 10px;
+	}
+	.btn-group{
+		margin: 0;
+	}
+	.icon-btn{
+		margin: 10px 15px;
+	}
+}

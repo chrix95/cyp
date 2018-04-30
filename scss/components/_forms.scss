@@ -1,0 +1,152 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 18. Form Style
+|----------------------------------------------------------------------------
+*/
+
+.user-form-block{
+	padding: 100px 0;
+}
+.form-control:focus{
+	border-color: $border_clr;
+}
+select.form-control:not([size]):not([multiple]){
+	height: auto;
+}
+textarea{
+	resize: none;
+}
+.form-common{
+	.form-group{
+		margin: 0 0 10px 0;
+		label{
+			font-size: 14px;
+			line-height: 23px;
+			font-weight: 600;
+			color: $lime_dark;
+		}
+		.form-control{
+			height: auto;
+			font-size: 12px;
+			padding: 13px 0 13px 30px;
+			border-radius: 3px;
+			border: 1px solid $border_clr;
+			background: transparent;
+		}
+	}
+	.custom-control-indicator{
+		border-radius: 0;
+		background: transparent;
+		border: 1px solid $border_clr;
+	}
+	.custom-control-input:checked~.custom-control-indicator{
+		background-color: $orange_clr;
+	}
+	.custom-control-input:focus~.custom-control-indicator{
+		outline: 0;
+		box-shadow: none;
+	}
+	.forgot-link-block{
+		text-align: right;
+		width: 100%;
+		a{
+			font-weight: 600;
+		}
+	}
+	.form-btn-block{
+		width: 100%;
+	}
+	.form-check-row{
+		margin-bottom: 3px;
+	}
+	margin-bottom: 20px;
+}
+.registration-form-block{
+	padding: 50px;
+	-webkit-box-shadow: 0px 0px 29px -1px rgba(224, 224, 224, 0.63);
+	-moz-box-shadow: 0px 0px 29px -1px rgba(224, 224, 224, 0.63);
+	box-shadow: 0px 0px 29px -1px rgba(224, 224, 224, 0.63);
+}
+.registration-form-title{
+	text-align: center;
+	h4{
+		font-size: 26px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+}
+.signin-others-option-block{
+	text-align: center;
+	h5{
+		font-weight: 600;
+		margin-bottom: 50px;
+		a{
+			color: $orange_clr;
+			&:hover,
+			&:focus,
+			&:active{
+				color: $orange_clr;
+			}
+		}
+	}
+	p{
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+}
+
+/*-- additionalInfo styling ---*/
+.additionalinfo-toggle-switch{
+	input[type="checkbox"]{
+		display: none;
+	}
+}
+.additionalinfo-toggle-switch label{
+	font-weight:300 !important;
+	position:relative;
+	padding-right:50px;
+	line-height:20px;
+	font-size:12px;
+	font-weight:300;
+	cursor:pointer;
+	color:#111;
+}
+.additionalinfo-toggle-switch label:before{
+	position:absolute;
+	top:0;
+	right:0;
+	border-radius:10px;
+	height:20px;
+	width:40px;
+	background: $border_clr;
+	content:"";
+	transition:all .5s ease;
+}
+.additionalinfo-toggle-switch input[type="checkbox"]:checked + label:before{
+	background: $orange_clr;
+}
+.additionalinfo-toggle-switch input[type="checkbox"]:checked + label:after{
+	right:3px;
+}
+.additionalinfo-toggle-switch label:after{
+	position:absolute;
+	top:3px;
+	right:22px;
+	border-radius:50%;
+	height:14px;
+	width:14px;
+	background: $white_clr;
+	content:"";
+	transition:all .5s ease;
+}
+.filter-form{
+	.form-group{
+		display: inline-block;
+		width: 220px;
+		
+	}
+}

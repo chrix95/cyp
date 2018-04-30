@@ -1,0 +1,108 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 3. Main Banner Style
+|----------------------------------------------------------------------------
+*/
+.main-header-section{
+	padding: 220px 0 140px 0;
+	position: relative;
+	background: url(../images/background/5.jpg) center center no-repeat;
+	background-size: cover;
+}
+.header-content-block{
+	position: relative;
+	z-index: 99;
+	
+}
+.header-title-block{
+	text-align: center;
+	h2{
+		font-size: 62px;
+		color: $white_clr;
+		margin-bottom: 0;
+		line-height: 70px;
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 22px;
+		color: $white_clr;
+		margin-bottom: 20px; 
+	}
+}
+.filter-form.filter-header-form{
+	.form-group{
+		width: 275px;
+	}
+	.outer-select-input-box{
+		width: 255px;
+	}
+	button{
+		width: 270px;
+		border-radius: 0;
+		cursor: pointer;
+	}
+}
+.listing-promote-text{
+	text-align: center;
+	color: $white_clr;
+	margin-bottom: 55px;
+}
+.listing-promote-steps{
+	text-align: center;
+	background:  url(../images/background/arrow-icon.png) center 20px no-repeat;
+	.listing-promote-block{
+		display: inline-block;
+		width: 180px;
+		color: $white_clr;
+		text-align: center;
+		span{
+			font-size: 40px;
+		}
+	}
+}
+
+/*-- Main Header Section Two --*/
+.main-header-section-two{
+	.filter-form.filter-header-form{
+		.form-group,
+		.outer-select-input-box{
+			width: 100%;
+		}
+		.form-group{
+			margin: 0 0 20px 0;
+		}
+		.btn-group{
+			 button{
+				margin: 0;
+				width: 140px;
+			 }
+			position: relative;
+			top: 0;
+		}
+	}
+	.listing-catagory-block{
+		width: 185px;
+		height: 170px;
+		margin: 6px 8px;
+		display: inline-block;
+		position: relative;
+		z-index: 999;
+		-webkit-box-shadow: -1px 1px 21px 3px rgba(204, 204, 204, 0.35);
+		-moz-box-shadow: -1px 1px 21px 3px rgba(204, 204, 204, 0.35);
+		box-shadow: -1px 1px 21px 3px rgba(204, 204, 204, 0.35);
+		&:after{
+			content: none;
+		}
+		&:hover{
+			.catagory-text{
+				-webkit-transform: translateY(-44px);
+				-ms-transform: translateY(-44px);
+				transform: translateY(-44px);
+			}
+		}
+	}
+}

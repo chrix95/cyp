@@ -1,0 +1,87 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 8. Listing Catagory Style
+|----------------------------------------------------------------------------
+*/
+.listing-catagory-section{
+	-webkit-box-shadow: -80px -32px 44px -25px rgba(253, 136, 10, 0.75);
+	-moz-box-shadow: -80px -32px 44px -25px rgba(253, 136, 10, 0.75);
+	box-shadow: -80px -32px 44px -25px rgba(253, 136, 10, 0.75);
+	position: relative;
+}
+.listing-catagory-block{
+	position: relative;
+	&:before,
+	&:after{
+		content: "\e041";
+		font-size: 30px;
+		color: $white_clr;
+		position: absolute;
+		z-index: 9;
+		margin: 0 auto 0 auto;
+		font-family: 'simple-line-icons';
+		@include transition(0.3s);
+	}
+	&:before{
+		top: 30%;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	&:after{
+		top: 38%;
+		left: 28px;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&:hover{
+		&:before{
+			opacity: 0;
+			visibility: hidden;
+		}
+		&:after{
+			opacity: 1;
+			visibility: visible;
+		}
+		.catagory-text{
+			transform: translateY(-40px);
+			p{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.overlay{
+			background: rgba(17,17,17,0.9);
+		}
+	}
+}
+.catagory-text{
+	position: absolute;
+	top: 65%;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	text-align: center;
+	margin: 0 auto 0 auto;
+	transform: translateY(-10px);
+	@include transition(0.3s);
+	h4,p{
+		color: $white_clr;
+		margin: 0;
+		a:hover,
+		a:active,
+		a:focus{
+			color: $white_clr;
+		}
+	}
+	p{
+		opacity: 0;
+		visibility: hidden;
+		@include transition(0.3s);
+	}
+}

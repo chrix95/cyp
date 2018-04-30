@@ -1,0 +1,48 @@
+
+@import "../variable";
+@import "../mixins";
+
+/*
+|----------------------------------------------------------------------------
+| 17. Pricing Style
+|----------------------------------------------------------------------------
+*/
+.packages-section{
+	padding: 100px 0;
+}
+.pricing-block{
+	padding: 35px 0 60px 0;
+	text-align: center;
+	.pricing-heading{
+		font-size: 18px;
+	}
+	.price-block{
+		padding: 18px 0;
+		background: $lime_dark;
+		h4{
+			color: $white_clr;
+			margin-bottom: 0;
+		}
+	}
+	.packages{
+		padding: 30px 0 45px 0;
+		p{
+			margin-bottom: 10px;
+		}
+	}
+	-webkit-box-shadow: 0px 0px 29px -1px rgba(224, 224, 224, 0.63);
+	-moz-box-shadow: 0px 0px 29px -1px rgba(224, 224, 224, 0.63);
+	box-shadow: 0px 0px 29px -1px rgba(224, 224, 224, 0.63);
+}
+.pricing-block.standard{
+	.pricing-btn,
+	.price-block{
+		background: $orange_clr;
+	}
+	.pricing-btn{
+		color: $white_clr;
+		border-color: $orange_clr;
+		background: $orange_clr;
+		
+	}
+}
