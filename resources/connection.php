@@ -14,6 +14,4 @@ $conn = new PDO($connectionstring, $user,'');
   // } else {
   //   echo "Error";
   // }
-
-
- ?>
+?>
