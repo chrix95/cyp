@@ -1,75 +1,3 @@
-/* This css file is to override bootstarp css
-********************************************************* /
-* Theme Name: ListingGEO - Directory Listing Template
-* Theme URI:  http://themeforest.ne/user/codepassenger
-* Author: CodePassenger
-* Author URI: http://CodePassenger.com
-* Description:  listingGeo HTML5 Template
-* Version: 1.0.0
-* License: GNU General Public License v2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
-* Tags: ahtml5,css3,site template,listing,creative,geo,location
-*********************************************************** /
-
-
-/*
-|----------------------------------------------------------------------------
-| CSS INDEX
-|----------------------------------------------------------------------------
-
-
-1. General Style
-
-2. Main header Style
-
-3. Main Banner Style
-
-4. Breadcrumb Style
-
-5. About Style
-
-6. Blog Style
-
-7. Team Style
-
-8. Listing Catagory Style
-
-9. Popular Cities Style
-
-10. Working Process Style
-
-11. Single Style
-
-12. Widgets Style
-
-13. Single Style
-
-14. Testimonial Style
-
-15. Call to action Style
-
-16. Working Map Style
-
-17. Pricing Style
-
-18. Form Style
-
-19. Map Style
-
-20. Listing Map Style
-
-21. Add listing Style
-
-22. Pagination Style
-
-23. Contact Style
-
-24. 404 Style
-
-25. Dashboard Style
-
-26. Footer Style
-*/
 /*
 |----------------------------------------------------------------------------
 | 1. General Style
@@ -101,37 +29,6 @@ p {
   font-size: 14px;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  line-height: 100%;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-}
-
-h1 {
-  font-size: 42px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 32px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-h5 {
-  font-size: 14px;
-}
-
-h6 {
-  font-size: 12px;
 }
 
 img {
@@ -194,7 +91,7 @@ iframe {
 /*--- section title style --*/
 .section-title {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 .section-title h2 {
   margin-bottom: 0;
@@ -791,7 +688,9 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
   -webkit-transform: translateY(-44px);
   transform: translateY(-44px);
 }
-
+.catagory-text h4 {
+  font-size: 15px;
+}
 /*
 |----------------------------------------------------------------------------
 | 4. Breadcrumb Style
@@ -3684,27 +3583,26 @@ input:-moz-placeholder {
 body.dashboard {
   overflow-x: hidden !important;
 }
-
 .page-container-wrap {
-  width: calc(100% - 260px);
+  width: calc(100% - 270px);
   margin-left: 0;
   position: relative;
-  -webkit-transform: translate3d(200px, 0, 0);
-  transform: translate3d(250px, 0, 0);
+  -webkit-transform: translate3d(270px, 0, 0);
+  transform: translate3d(270px, 0, 0);
   top: 120px;
 }
-
 .cbp-spmenu {
   background: #fff;
   position: fixed;
-  top: 95px;
+  top: 100px;
   height: 100%;
   z-index: 999;
-  width: 240px;
+  padding: 35px 15px;
+  width: 260px;
   -webkit-transition: none;
   transition: none;
-  -webkit-box-shadow: 11px 1px 22px -9px rgba(0, 0, 0, 0.2);
-  box-shadow: 11px 1px 22px -9px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 11px 1px 22px -9px rgba(243, 175, 0, 0.5);
+  box-shadow: 11px 1px 22px -9px rgba(243, 175, 0, 0.5);
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
@@ -3724,48 +3622,6 @@ body.dashboard {
 .accordion-menu ul {
   margin-bottom: 0;
 }
-
-.user-profile-block {
-  padding: 30px 25px;
-  display: table;
-  position: relative;
-  background-size: cover;
-  -webkit-transition: none;
-  transition: none;
-  text-align: center;
-}
-.user-profile-block .listing-btn-cmn {
-  margin: 0 auto;
-}
-.user-profile-block div {
-  display: inline-block;
-  position: relative;
-  z-index: 999;
-  text-align: left;
-  margin-bottom: 10px;
-}
-.user-profile-block .user-thumb {
-  display: table-cell;
-  padding-right: 15px;
-}
-.user-profile-block .user-thumb img {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-}
-.user-profile-block .user-info {
-  display: table-cell;
-  vertical-align: middle;
-  padding-top: 18px;
-}
-.user-profile-block .user-info span, .user-profile-block .user-info h5 {
-  margin: 0;
-  color: #111;
-}
-.user-profile-block .user-info span {
-  font-weight: 300;
-}
-
 .slide-navigation-wrap {
   position: relative;
 }
@@ -4252,7 +4108,12 @@ ul.social li a:hover, ul.social li a:active, ul.social li a:focus {
 }
 .about-thumb img {
   width: 200px;
-  margin: 15px auto;
+}
+.modal-title {
+  font-size: 17px;
+}
+#modalSelect h3 {
+  margin: 10px;
 }
 .advertisement {
   padding: 30px 0px;

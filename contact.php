@@ -22,10 +22,10 @@
     <!-- BX Slider CSS -->
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
 
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -58,135 +58,94 @@
                     <!-- <p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos</p> -->
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 offset-lg-1 col-md-6">
-                        <div class="contactinfo-block">
-                            <!-- <h4>Contact us</h4> -->
-                            <div class="contact-widget">
-                                <p class="address">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span>
-                                      c/o Berachah Micro Finance Bank Ltd <br>
-                                      1 CMD Road <br>Magodo/Shangisha <br>
-                                      Opp Old Toll Gate Ikosi Area, <br>
-                                      Ketu Lagos
-                                    </span>
-                                </p>
-                                <p>
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                    <span>
-                                      +234(0)809-9553334 <br>
-                                      +234(0)802-3226459 <br>
-                                      +234(0)703-1003494 <br>
-                                      +234(0)805-6668991
-                                    </span>
-                                </p>
-                                <p class="last-type">
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <span>info@countryyellowpages.com</span>
-                                </p>
-                                <div class="social-with-label">
-                                    <span>Social Media: </span>
-                                    <ul class="social">
-                                        <li>
-                                            <a href="http://www.facebook.com/countryyellowpages">
-                                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.twitter.com/countryyellowpages">
-                                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.youtube.com/countryyellowpages">
-                                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.plus.google.com/countryyellowpages">
-                                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                  <div class="col-md-5">
+                    <div class="contactinfo-block">
+                      <div class="contact-widget">
+                        <p class="address">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          <span>
+                            c/o Berachah Micro Finance Bank Ltd <br>
+                            1 CMD Road <br>Magodo/Shangisha <br>
+                            Opp Old Toll Gate Ikosi Area, <br>
+                            Ketu Lagos
+                          </span>
+                        </p>
+                        <p>
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                          <span>
+                            +234(0)809-9553334 <br>
+                            +234(0)802-3226459 <br>
+                            +234(0)703-1003494 <br>
+                            +234(0)805-6668991
+                          </span>
+                        </p>
+                        <p class="last-type">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <span>info@countryyellowpages.com</span>
+                        </p>
+                        <div class="social-with-label">
+                          <span>Social Media: </span>
+                          <ul class="social">
+                            <li>
+                              <a href="http://www.facebook.com/countryyellowpages">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                              <li>
+                                <a href="http://www.twitter.com/countryyellowpages">
+                                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="http://www.youtube.com/countryyellowpages">
+                                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="http://www.plus.google.com/countryyellowpages">
+                                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                          </ul>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-lg-6 offset-lg-1 col-md-6">
-                        <div class="contactform-block">
-                            <form id="contactForm" class="form-common">
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                  <div class="form-group">
-                                      <input id="businessname" type="text" class="form-control" placeholder="Business Name">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                  <div class="form-group">
-                                      <input id="natureofbusiness" type="text" class="form-control" placeholder="Nature of Business">
-                                  </div>
-                                </div>
+                  </div>
+                    <div class="col-md-7">
+                      <div class="contactform-block">
+                        <p id="message"></p>
+                        <form id="contactForm" method="post" action="resources/modalScript.php" autocomplete="off">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group label-floating">
+                                <label class="control-label">Full name</label>
+                                <input type="text" name="name" class="form-control">
                               </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                  <div class="form-group textarea-form-group">
-                                      <textarea id="address" rows="5" cols="5" class="form-control" placeholder="Address"></textarea>
-                                  </div>
-                                </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group label-floating">
+                                <label class="control-label">Email</label>
+                                <input type="email" name="email" class="form-control">
                               </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                  <div class="form-group">
-                                    <select class="form-control" name="" id="location">
-                                      <option value="" selected disabled>Please select</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                  <div class="form-group">
-                                      <input id="email" type="text" class="form-control" placeholder="Email">
-                                  </div>
-                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group label-floating">
+                                <label class="control-label">Your Messge</label>
+                                <textarea class="form-control" name="message" rows="6"></textarea>
                               </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                  <div class="form-group">
-                                      <input id="phone" type="text" class="form-control" placeholder="Phone">
-                                  </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                  <div class="form-group">
-                                      <input id="fax" type="text" class="form-control" placeholder="Fax">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                  <div class="form-group textarea-form-group">
-                                      <textarea id="enquirydetails" rows="6" cols="5" class="form-control" placeholder="Enquiry Details"></textarea>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                  <div class="form-group">
-                                      <select class="form-control" name="">
-                                        <option>How did you hear about us</option>
-                                        <option>Newspaper</option>
-                                        <option>Internet</option>
-                                        <option>Leaflet</option>
-                                        <option>Delta</option>
-                                      </select>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                  <button type="button" name="submit" class="btn btn-warning btn-block">Submit Enquiry</button>
-                                </div>
-                              </div>
-                            </form>
-                        </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <button class="btn btn-primary btn-send-message" name="sendMessage">
+                                Send Message
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                 </div>
             </div>

@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- BX Slider CSS -->
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
   <body>
     <div class="main-wrap">
@@ -63,7 +63,7 @@
           <div class="row">
             <div class="col-lg-6 push-lg-6 col-md-4">
               <div class="about-thumb">
-                <img src="images/logo.png" alt="img" class="img-responsive">
+                <img src="assets/images/logo.png" alt="img" class="img-responsive center-block">
               </div>
             </div>
             <div class="col-lg-6 pull-lg-6 col-md-8">
@@ -199,7 +199,7 @@
             grow your business
           </h2>
           <p>
-            There are many consumers & business owners find this directory is helpful.
+            There are many consumers &amp; business owners find this directory is helpful.
           </p>
           <div class="btn-group">
             <a href="404.html" class="icon-btn adining-listing-btn">

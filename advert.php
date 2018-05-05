@@ -22,10 +22,10 @@
     <!-- BX Slider CSS -->
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
 
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -53,19 +53,19 @@
         <div class="advert-info-section">
             <div class="container">
                 <div class="row">
-                  <div class="col-lg-6 col-md-8">
+                  <div class="col-md-8">
                       <div class="about-info">
                           <h2>COUNTRY YELLOW PAGES 2017/2018 EDITION </h2>
                           <p>
                             We are very glad to inform you that the 2015/2016 Edition of the famous COUNTRY YELLOW PAGES - 'Business Directory' is NOW ON SALE. This is the Yellow Pages that Gives You an Edge over Your Competitors’. This Edition comprises current information of all companies, organisations & Government parastatals in 36 States & FCT in Nigeria (40, 865 Entries).
                             <br><br>The cost of Hard Cover Copy is <span>₦15,000.00 (Fifteen Thousand Naira only).</span>
                           </p>
-                          <a href="forms/price_list_2013.doc" class="advertForm">Download Advert Form &amp; Rates</a>
+                          <a href="resources/forms/price_list_2013.doc" class="advertForm">Download Advert Form &amp; Rates</a>
                       </div>
                   </div>
-                  <div class="col-lg-6 col-md-4">
+                  <div class="col-md-4">
                       <div class="about-thumb">
-                          <img src="images/ads/onsale2016.jpg" alt="img" class="img-responsive">
+                          <img src="assets/images/ads/onsale2016.jpg" alt="img" class="img-responsive center-block">
                       </div>
                   </div>
                 </div>
@@ -221,47 +221,47 @@
                   <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                       <a href="http://www.nnpc.com">
-                        <img src="images/ads/NNPCEgg.jpg" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/NNPCEgg.jpg" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.oilservltd.ng.com">
-                        <img src="images/ads/OilserveLtd.jpg" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/OilserveLtd.jpg" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.realstrikers.com">
-                        <img src="images/ads/RealStrickers.jpg" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/RealStrickers.jpg" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.sarsoli.com">
-                        <img src="images/ads/SarsoliIndComLtd.jpg" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/SarsoliIndComLtd.jpg" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.surveillantfire.com">
-                        <img src="images/ads/SurveillantFire.jpg" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/SurveillantFire.jpg" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.synlab.com.ng">
-                        <img src="images/ads/SynLab.jpg" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/SynLab.jpg" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.tecogroupng.com">
-                        <img src="images/ads/Teco.png" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/Teco.png" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.bespokeeventsng.com">
-                        <img src="images/ads/TheAtrium.png" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/TheAtrium.png" alt="" class="img img-responsive" />
                       </a>
                     </div>
                     <div class="carousel-item">
                       <a href="http://www.xovar.ng">
-                        <img src="images/ads/XovarFlyer.png" alt="" class="img img-responsive" />
+                        <img src="assets/images/ads/XovarFlyer.png" alt="" class="img img-responsive" />
                       </a>
                     </div>
                   </div>

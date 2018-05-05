@@ -6,7 +6,7 @@
           <div class="footer-widget">
             <div class="footer-logo-block">
               <a href="index.php">
-                <img src="images/logo.png" alt="img" class="img-responsive">
+                <img src="assets/images/logo.png" alt="img" class="img-responsive">
               </a>
             </div>
             <p class="address">
@@ -120,7 +120,7 @@
             <article class="latest-post">
               <div class="post-thumb">
                 <a href="javascript:void(0)">
-                  <img src="images/post/7.jpg" alt="img" class="img-responsive">
+                  <img src="assets/images/post/7.jpg" alt="img" class="img-responsive">
                 </a>
               </div>
               <div class="post-wrapper">
@@ -142,7 +142,7 @@
             <article class="latest-post">
               <div class="post-thumb">
                 <a href="javascript:void(0)">
-                  <img src="images/post/7.jpg" alt="img" class="img-responsive">
+                  <img src="assets/images/post/7.jpg" alt="img" class="img-responsive">
                 </a>
               </div>
               <div class="post-wrapper">
@@ -210,6 +210,7 @@
 <!-- Tinymce-JS -->
 <script src="assets/js/tinymce/tinymce.min.js"></script>
 <!-- Google-map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>    <script src="assets/js/gmap3.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
+<script src="assets/js/gmap3.min.js"></script>
 <script src="assets/js/infobox.js"></script>
-<script src="js/custom.js"></script></body></html>
+<script src="assets/js/custom.js"></script></body></html>

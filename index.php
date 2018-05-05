@@ -17,15 +17,14 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- BX Slider CSS -->
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
-
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -125,7 +124,7 @@
                         <div class="row">
                             <div class="listing-catagory-block">
                                 <div class="catagory-image">
-                                    <img src="images/catagory/1.jpg" alt="img" class="img-responsive">
+                                    <img src="assets/images/catagory/1.jpg" alt="img" class="img-responsive">
                                     <div class="catagory-text">
                                         <h4>
                                             <a href="javascript:void(0)">Manufacturing &amp; Production</a>
@@ -150,7 +149,7 @@
                                 $success = $get_listings->rowCount();
                                ?>
                                 <div class="catagory-image">
-                                    <img src="images/catagory/2.jpg" alt="img" class="img-responsive">
+                                    <img src="assets/images/catagory/2.jpg" alt="img" class="img-responsive">
                                     <div class="catagory-text">
                                         <h4>
                                             <a href="javascript:void(0)">Oil &amp; Gas</a>
@@ -175,7 +174,7 @@
                                     $get_listings->execute();
                                     $success = $get_listings->rowCount();
                                    ?>
-                                  <img src="images/catagory/3.jpg" alt="img" class="img-responsive">
+                                  <img src="assets/images/catagory/3.jpg" alt="img" class="img-responsive">
                                   <div class="catagory-text">
                                       <h4>
                                           <a href="javascript:void(0)">Maintenance Services</a>
@@ -200,7 +199,7 @@
                                     $get_listings->execute();
                                     $success = $get_listings->rowCount();
                                    ?>
-                                  <img src="images/catagory/4.jpg" alt="img" class="img-responsive">
+                                  <img src="assets/images/catagory/4.jpg" alt="img" class="img-responsive">
                                   <div class="catagory-text">
                                       <h4>
                                           <a href="javascript:void(0)">Telecommunications</a>
@@ -225,7 +224,7 @@
                                     $get_listings->execute();
                                     $success = $get_listings->rowCount();
                                    ?>
-                                  <img src="images/catagory/5.jpg" alt="img" class="img-responsive">
+                                  <img src="assets/images/catagory/5.jpg" alt="img" class="img-responsive">
                                   <div class="catagory-text">
                                       <h4>
                                           <a href="javascript:void(0)">Consultancy</a>
@@ -255,7 +254,7 @@
               </div>
               <div class="col-md-4">
                 <div class="about-thumb">
-                    <a href="advert.php"><img src="images/ads/onsale2016.jpg" alt="img" class="img-responsive"></a>
+                    <a href="advert.php"><img src="assets/images/ads/onsale2016.jpg" alt="img" class="img-responsive"></a>
                 </div>
               </div>
             </div>
@@ -310,47 +309,47 @@
                  <div class="carousel-inner" role="listbox">
                    <div class="carousel-item active">
                      <a href="http://www.bespkokeeventsng.com" target="_blank">
-                       <img src="images/ads/BeSpoke.png" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/BeSpoke.png" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.boi.ng" target="_blank">
-                       <img src="images/ads/BOIStateOffices.jpg" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/BOIStateOffices.jpg" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.ebusiness.greatnigeriaplc.com" target="_blank">
-                       <img src="images/ads/eBusiness.jpg" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/eBusiness.jpg" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.funfactoryng.com" target="_blank">
-                       <img src="images/ads/FunFactory.png" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/FunFactory.png" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.funturfng.com" target="_blank">
-                       <img src="images/ads/FunTurf.png" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/FunTurf.png" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.lafarge.com" target="_blank">
-                       <img src="images/ads/Lafarge.jpg" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/Lafarge.jpg" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.leedsbeckett.ac.uk" target="_blank">
-                       <img src="images/ads/LeedsBecketts.jpg" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/LeedsBecketts.jpg" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.midelmanagement.com" target="_blank">
-                       <img src="images/ads/MidelFlier.jpg" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/MidelFlier.jpg" alt="" class="img img-responsive" />
                      </a>
                    </div>
                    <div class="carousel-item">
                      <a href="http://www.ncc.gov.ng" target="_blank">
-                       <img src="images/ads/NCCAd.jpg" alt="" class="img img-responsive" />
+                       <img src="assets/images/ads/NCCAd.jpg" alt="" class="img img-responsive" />
                      </a>
                    </div>
                  </div>
@@ -381,7 +380,7 @@
       <?php include 'footer.php' ?>
       </div>
       <!-- animation slider -->
-      <script type="text/javascript" src="js/background.cycle.js"></script>
+      <script type="text/javascript" src="assets/js/background.cycle.js"></script>
       <!-- Google-map -->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
       <script src="assets/js/gmap3.min.js"></script>
@@ -390,10 +389,10 @@
           $(document).ready(function() {
               $(".main-header-section").backgroundCycle({
                   imageUrls: [
-                    'images/res/img/bg-image.jpg',
-                    // 'images/res/img/onsale2016.jpg',
-                    'images/res/img/bg2.jpeg',
-                    'images/res/img/bg3.jpg'
+                    'assets/images/res/img/bg-image.jpg',
+                    // 'assets/images/res/img/onsale2016.jpg',
+                    'assets/images/res/img/bg2.jpeg',
+                    'assets/images/res/img/bg3.jpg'
                   ],
                   fadeSpeed: 1000,
                   duration: 7000,
@@ -423,7 +422,7 @@
   				},
   				marker: {
   					latLng: [markerLatLng.lat, markerLatLng.lng],
-  					options: {animation:google.maps.Animation.BOUNCE, icon: 'images/markers/listing-post-pointer.png' }
+  					options: {animation:google.maps.Animation.BOUNCE, icon: 'assets/images/markers/listing-post-pointer.png' }
   				},
   				styledmaptype: {
   					id: "style1",

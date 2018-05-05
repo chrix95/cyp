@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2018 at 10:47 PM
+-- Generation Time: May 06, 2018 at 12:42 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -1411,6 +1411,25 @@ INSERT INTO `contact` (`id`, `companyName`, `companyAddress`, `companyTel`, `com
 (1361, 'UnityKapital Assurance Plc.', 'Hanaiyo Plaza: 1 Nnamdi Azikiwe Str. Off Abubakar Tafawa Balewa Rd. GRA, Bauchi', '0709-8204482', 'info@unitykapital.com', 'www.unitykapital.com', 'Bauchi', 'Insurance'),
 (1362, 'UnityKapital Assurance Plc.', '1ST FLOOR, UNITY BANK OFFICE 7 FACTORY ROAD OPP. MR.BIGGS, ABA', '0709-8200770; ', 'info@unitykapital.com', 'www.unitykapital.com', 'Abia', 'Insurance'),
 (1363, 'UnityKapital Assurance Plc.', '52A NEW MARKET Rd. <R>ONITSHA', '0709-8200771', 'info@unitykapital.com', 'www.unitykapital.com', 'Anambra', 'Insurance');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE IF NOT EXISTS `registration` (
+  `ID` int(255) NOT NULL AUTO_INCREMENT,
+  `full_name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `updated` int(255) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

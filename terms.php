@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- BX Slider CSS -->
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
   <body>
     <div class="main-wrap">
@@ -206,12 +206,12 @@
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
                     <a href="#">
-                      <img src="images/background/cartoonFlier.jpg" alt="" class="img img-responsive" style="max-width: 77%" />
+                      <img src="assets/images/background/cartoonFlier.jpg" alt="" class="img img-responsive" style="max-width: 77%" />
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a href="http://www.oilservltd.ng.com">
-                      <img src="images/background/JaizInsurance.jpg" alt="" class="img img-responsive" style="max-width: 77%" />
+                      <img src="assets/images/background/JaizInsurance.jpg" alt="" class="img img-responsive" style="max-width: 77%" />
                     </a>
                   </div>
                 </div>

@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php
+	try{
+		session_start();
+
+		if ($_SESSION['success'] != '' || $_SESSION['size'] != '') {
+			?>
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
@@ -20,9 +25,9 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- BX Slider CSS -->
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
   </head>
   <body>
@@ -112,6 +117,9 @@
                 if (isset($_GET['false'])) {
 
                 ?>
+									<div class="alert alert-info" role="alert">
+										<strong>Total result found: 0</strong>
+									</div>
                   <div class="clients">
                     <div class="header">
                       <h2>No result match</h2>
@@ -123,9 +131,12 @@
 
                   $arraySize = $_SESSION['size'];
                   $success = $_SESSION['success'];
-                  // var_dump($success);
-
-                  for($x = 0; $x < $arraySize; $x++) {
+									?>
+									<div class="alert alert-success" role="alert">
+	                  <strong>Total result found: <?php echo $arraySize; ?></strong>
+	                </div>
+									<?php
+                  for($x = 0; $x < 3; $x++) {
                     $name = $success[$x]->companyName;
                     $address = $success[$x]->companyAddress;
                     $tel = $success[$x]->companyTel;
@@ -187,8 +198,10 @@
                 }
 
                 ?>
-
               <!-- end result area -->
+              <div class="alert alert-danger" role="alert">
+                <strong>Oh snap! </strong><a href="#" class="alert-link" data-toggle="modal" data-target="#myRegModal">Register with us</a> to view more results.
+              </div>
             </div>
             <!-- related search area -->
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 adSideBar">
@@ -201,3 +214,13 @@
       <!-- main result section end -->
       <?php include "footer.php" ?>
     </div>
+	<?php
+		} else {
+			session_destroy();
+			header("location: index.php");
+		}
+
+		} catch (Exception $e) {
+			echo "Problem Somewhere: ". $e->getMessage();
+		}
+	?>

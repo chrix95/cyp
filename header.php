@@ -1,24 +1,24 @@
 <div class="main-nav-section">
   <div class="user-panel">
-    <a href="forms/Registration Form.docx" class="user-register-btn border-btn" data-toggle="modal" data-target="#myModal">
+    <a href="" class="user-register-btn border-btn" data-toggle="modal" data-target="#myRegModal">
       <i class="fa fa-user-o" aria-hidden="true">
       </i>
       Register
     </a>
-    <a href="404.php" class="user-addlisting-btn">
-      <i class="fa fa-plus" aria-hidden="true">
+    <a href="" class="user-register-btn border-btn" data-toggle="modal" data-target="#myLoginModal">
+      <i class="fa fa-user-o" aria-hidden="true">
       </i>
-      Submit Free Listing
+      Login
     </a>
   </div>
-  <?php include "modalForm.php"; ?>
+  <?php include "resources/modalForm.php"; ?>
   <nav class="navbar navbar-toggleable-md fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa fa-bars navbar-toggle-btn" aria-hidden="true">
       </i>
     </button>
     <a class="navbar-brand" href="index.php">
-      <img src="images/logo.png" alt="img" class="img-responsive">
+      <img src="assets/images/logo.png" alt="img" class="img-responsive">
     </a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
       <ul class="navbar-nav">
