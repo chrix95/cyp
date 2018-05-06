@@ -87,7 +87,7 @@
             <div class="panel panel-default">
               <div class="panel-heading panelHead">
                 <div class="panel-title">
-                  <h4>Change Password</h4>
+                  <h4>Make payment for full access</h4>
                 </div>
               </div>
               <div class="panel-body">
