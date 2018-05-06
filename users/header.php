@@ -26,7 +26,7 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a href="" class="" data-toggle="modal" data-target="#mypasswordModal">
+              <a href="" class="nav-link" data-toggle="modal" data-target="#mypasswordModal">
                 Settings
               </a>
             </li>

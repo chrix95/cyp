@@ -91,18 +91,37 @@
                 </div>
               </div>
               <div class="panel-body">
-                <form class="regForm">
-                  <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Current Password">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" placeholder="New Password">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Confirm New Password">
-                  </div>
-                  <button type="submit" class="btn btn-primary findOut">Update Password</button>
+                <form >
+                  <script src="https://js.paystack.co/v1/inline.js"></script>
+                  <button type="button" onclick="payWithPaystack()"> Pay </button>
                 </form>
+
+                <script>
+                  function payWithPaystack(){
+                    var handler = PaystackPop.setup({
+                      key: 'pk_test_ad8895a4fe6b5f196b62a1a34a6c044addddbae1',
+                      email: 'customer@email.com',
+                      amount: 10000,
+                      ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+                      metadata: {
+                         custom_fields: [
+                            {
+                                display_name: "Mobile Number",
+                                variable_name: "mobile_number",
+                                value: "+2348012345678"
+                            }
+                         ]
+                      },
+                      callback: function(response){
+                          alert('success. transaction ref is ' + response.reference);
+                      },
+                      onClose: function(){
+                          alert('window closed');
+                      }
+                    });
+                    handler.openIframe();
+                  }
+                </script>
               </div><!--panel Body -->
             </div><!--panel -->
           </div>
@@ -132,6 +151,7 @@
     <!-- Google-map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
     <script src="../assets/js/gmap3.min.js"></script>
+
     <script type="text/javascript">
       $(document).ready(function (){
 
