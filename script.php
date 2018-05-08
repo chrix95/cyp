@@ -164,6 +164,27 @@
 
     }
 
+    if (isset($_POST['pay'])) {
+
+      $email = htmlentities(strip_tags($_POST['email']));
+
+      $update = $conn->prepare("UPDATE registration SET updated=:updated WHERE email=:email");
+      $update->bindValue(":updated", 1);
+      $update->bindParam(":email", $email);
+      $success = $update->execute();
+
+      if ($success) {
+        $_SESSION['details']->updated = 1;
+        echo "Payment Successful";
+      } else {
+        echo "Payment incomplete";
+      }
+
+    } else {
+
+      echo "Not set";
+
+    }
 
   } catch (Exception $e) {
 

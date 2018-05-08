@@ -91,16 +91,26 @@
                 </div>
               </div>
               <div class="panel-body">
-                <form >
-                  <script src="https://js.paystack.co/v1/inline.js"></script>
-                  <button type="button" onclick="payWithPaystack()"> Pay </button>
-                </form>
-
+                <?php if ($_SESSION['details']->updated == 0): ?>
+                  <div class="unpaid">
+                    <h5>Payment has not been made yet. Kindly make payment</h5>
+                    <form >
+                      <script src="https://js.paystack.co/v1/inline.js"></script>
+                      <input type="text" name="email" value="<?php echo $_SESSION['details']->email;?>" style="display: none;" id="email">
+                      <button type="button" onclick="payWithPaystack()"> Pay </button>
+                    </form>
+                  </div>
+                <?php endif; ?>
+                <?php if ($_SESSION['details']->updated == 1): ?>
+                  <div id="paid">
+                    <h5>Thanks. Payment has been completed</h5>
+                  </div>
+                <?php endif; ?>
                 <script>
                   function payWithPaystack(){
                     var handler = PaystackPop.setup({
                       key: 'pk_test_ad8895a4fe6b5f196b62a1a34a6c044addddbae1',
-                      email: 'customer@email.com',
+                      email: $('#email').val(),
                       amount: 10000,
                       ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
                       metadata: {
@@ -113,13 +123,31 @@
                          ]
                       },
                       callback: function(response){
-                          alert('success. transaction ref is ' + response.reference);
+                        successful();
+                        alert('success. transaction ref is ' + response.reference);
                       },
                       onClose: function(){
                           alert('window closed');
                       }
                     });
                     handler.openIframe();
+                  }
+                  function successful (){
+                    var email = $('#email').val();
+                    var mydata = {email: email, pay: ""};
+                    $.ajax({
+                      url: '../script.php',
+                      type: 'POST',
+                      data: mydata
+                    })
+                    .done(function(data) {
+                      if (data = 'Payment Successful') {
+                        setTimeout("window.location = 'payment.php'", 1000);
+                      } else if (data == 'Payment incomplete') {
+
+                        setTimeout("window.location = 'payment.php'", 4000);
+                      }
+                    })
                   }
                 </script>
               </div><!--panel Body -->
@@ -154,7 +182,6 @@
 
     <script type="text/javascript">
       $(document).ready(function (){
-
         "use strict";
         /*--------------------------------------------
             Window Scroll Settings

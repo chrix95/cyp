@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
 ---------------------------------------------*/
   $(window).on('scroll', function (event) {
       var scroll = $(window).scrollTop();
-      if (scroll >= 80) {
+      if (scroll >= 10) {
           $(".main-nav-section").addClass("nav-affix");
           $("#cbp-spmenu-s1").addClass("nav-affix");
       } else {

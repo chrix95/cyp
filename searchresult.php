@@ -136,7 +136,7 @@
 	                  <strong>Total result found: <?php echo $arraySize; ?></strong>
 	                </div>
 									<?php
-                  for($x = 0; $x < 3; $x++) {
+                  for($x = 0; $x < 2; $x++) {
                     $name = $success[$x]->companyName;
                     $address = $success[$x]->companyAddress;
                     $tel = $success[$x]->companyTel;
