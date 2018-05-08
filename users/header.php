@@ -1,9 +1,14 @@
 <div class="main-nav-section">
-  <div class="user-panel">
+  <div class="user-panel"  style="width: 450px;">
     <a href="logout.php" class="user-register-btn border-btn">
       <i class="fa fa-user-o" aria-hidden="true">
       </i>
       Sign Out
+    </a>
+    <a href="logout.php" class="">
+      <i class="fa fa-user-o" aria-hidden="true">
+      </i>
+      <?php echo $_SESSION['details']->full_name; ?>
     </a>
   </div>
   <?php include '../resources/modalForm.php';?>
