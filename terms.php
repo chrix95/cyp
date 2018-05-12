@@ -146,6 +146,28 @@
             <div class="about-info col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <p>
                 <span>
+                  A/C Name: Country Yellow Pages Directory.
+                </span>
+                <br>
+                Bank: Zenith Bank Plc.
+                <br>
+                A/c No: 1012747536
+                <br>
+                Sort Code: 057151258
+              </p>
+              <p>
+                <span>
+                  A/C Name: Country Yellow Pages Directory.
+                </span>
+                <br>
+                Bank: First Bank Plc.
+                <br>
+                A/c No: 2020704409
+                <br>
+                Sort Code: 011152484
+              </p>
+              <p>
+                <span>
                   A/C Name: Dionysius Nig. Enter. Ltd
                 </span>
                 <br>
@@ -176,28 +198,6 @@
                 A/c No: 3752001618
                 <br>
                 Sort Code: 056150629
-              </p>
-              <p>
-                <span>
-                  A/C Name: Country Yellow Pages Directory.
-                </span>
-                <br>
-                Bank: Zenith Bank Plc.
-                <br>
-                A/c No: 1012747536
-                <br>
-                Sort Code: 057151258
-              </p>
-              <p>
-                <span>
-                  A/C Name: Country Yellow Pages Directory.
-                </span>
-                <br>
-                Bank: First Bank Plc.
-                <br>
-                A/c No: 2020704409
-                <br>
-                Sort Code: 011152484
               </p>
             </div>
             <div class="hidden-sm-down col-md-6 col-lg-6 bg">

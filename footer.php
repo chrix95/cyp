@@ -12,15 +12,13 @@
             <p class="address">
               <i class="fa fa-map-marker" aria-hidden="true">
               </i>
-              c/o Berachah Micro Finance Bank Ltd
+              C/O Berachah Microfinance Bank,
               <br>
-              1 CMD Road
+              1 CMD Road,
               <br>
-              Magodo/Shangisha
+              Off Old Toll Gate,
               <br>
-              Opp Old Toll Gate Ikosi Area,
-              <br>
-              Ketu Lagos
+              Magodo GRA Lagos
             </p>
           </div>
         </div>
@@ -86,22 +84,22 @@
             <ul class="footer-content-list">
               <li>
                 <a href="about.php">
-                  About Country Yellow Pages
+                  About us
                 </a>
               </li>
               <li>
-                <a href="#working-process-section">
-                  What We Do
+                <a href="terms.php">
+                  Privacy policy
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)">
-                  Exclusive Listings
+                <a href="index.php#working-process-section">
+                  What we do
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)">
-                  Popular Locations
+                <a href="index.php">
+                  View Listings
                 </a>
               </li>
               <li>
@@ -120,21 +118,21 @@
             <article class="latest-post">
               <div class="post-thumb">
                 <a href="javascript:void(0)">
-                  <img src="assets/images/post/7.jpg" alt="img" class="img-responsive">
+                  <img src="assets/images/logo.png" alt="img" class="img-responsive center-block" width="43px">
                 </a>
               </div>
               <div class="post-wrapper">
                 <h6 class="title">
                   <a href="javascript:void(0)">
-                    Grand Park Hotel
+                    Dataflex Nig. Ltd.
                   </a>
                 </h6>
                 <p class="post-entry">
-                  175 Church Road, City Tower, California, CA785423
+                  227B Muri Okunola Str. Victoria Island Lagos
                 </p>
                 <div class="post-meta">
                   <a href="javascript:void(0)" class="post-tag">
-                    Hotel &amp; Resort
+                    Consultancy
                   </a>
                 </div>
               </div>
@@ -142,21 +140,21 @@
             <article class="latest-post">
               <div class="post-thumb">
                 <a href="javascript:void(0)">
-                  <img src="assets/images/post/7.jpg" alt="img" class="img-responsive">
+                  <img src="assets/images/logo.png" alt="img" class="img-responsive center-block" width="43px"">
                 </a>
               </div>
               <div class="post-wrapper">
                 <h6 class="title">
                   <a href="javascript:void(0)">
-                    Grand Park Hotel
+                    Staco Insurance Plc.
                   </a>
                 </h6>
                 <p class="post-entry">
-                  175 Church Road, City Tower, California, CA785423
+                  31 King Perekule Street, GRA Phase 11, Port Harcourt, Rivers State
                 </p>
                 <div class="post-meta">
                   <a href="javascript:void(0)" class="post-tag">
-                    Hotel &amp; Resort
+                    Insurance
                   </a>
                 </div>
               </div>

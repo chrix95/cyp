@@ -68,7 +68,6 @@
                           <div class="form-group home">
                             <label class="labels">Keyword</label>
           									<div class="input-group keyword">
-                              <!-- <span class="input-group-addon" style="color: blue;background-color: transparent;border: 1px solid #f3af00;"><i class="fa fa-user" aria-hidden="true"></i></span> -->
           										<input type="text" name="keyword" value="" placeholder="HiiT Consultant" style="color: black" class="form-control locationStyle"/>
           									</div>
                             <label id="keyword-error" class="error" for="keyword"></label>
@@ -274,16 +273,16 @@
                             <span class="ti-user"></span>
                             <h4>Register</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                              To have access to our extensive database of company's contact, we suggest you register with us.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="working-process-block">
                             <span class="ti-pencil-alt"></span>
-                            <h4>Add/Review your Listing</h4>
+                            <h4>View our Listing</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                              Full access control to our most current company profile is given to you upon registration completion
                             </p>
                         </div>
                     </div>
@@ -292,7 +291,7 @@
                             <span class="ti-stats-up"></span>
                             <h4>Grow Your Business</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                              With our list of contact, you can build your company reputation and standards.
                             </p>
                         </div>
                     </div>
@@ -362,13 +361,10 @@
                     Start today to get more exposure and <br> grow your business
                 </h2>
                 <p>
-                    There are many consumers &amp; business owners find this directory is helpful.
+                    There are many consumers &amp; business owners who finds this directory is helpful.
                 </p>
                 <div class="btn-group">
-                  <a href="404.php" class="icon-btn adining-listing-btn">
-                      <i class="fa fa-plus" aria-hidden="true"></i> Add Listing
-                  </a>
-                  <a href="#main-header-section" class="icon-btn explore-listing-btn">
+                  <a href="#main-header-section" class="icon-btn btn-readmore">
                       <i class="fa fa-search" aria-hidden="true"></i> Explore Listing
                   </a>
                 </div>
@@ -390,7 +386,6 @@
               $(".main-header-section").backgroundCycle({
                   imageUrls: [
                     'assets/images/res/img/bg-image.jpg',
-                    // 'assets/images/res/img/onsale2016.jpg',
                     'assets/images/res/img/bg2.jpeg',
                     'assets/images/res/img/bg3.jpg'
                   ],

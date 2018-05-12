@@ -194,23 +194,17 @@
       <div class="call-to-action-section">
         <div class="container">
           <h2>
-            Start today to get more exposure and
-            <br>
-            grow your business
+              Start today to get more exposure and <br> grow your business
           </h2>
           <p>
-            There are many consumers &amp; business owners find this directory is helpful.
+              There are many consumers &amp; business owners who finds this directory is helpful.
           </p>
           <div class="btn-group">
-            <a href="404.html" class="icon-btn adining-listing-btn">
-              <i class="fa fa-plus" aria-hidden="true">
-              </i>
-              Add Listing
+            <a href="advert.php" class="icon-btn btn-readmore">
+                <i class="fa fa-search" aria-hidden="true"></i> Get hardcopy
             </a>
-            <a href="index.php" class="icon-btn explore-listing-btn">
-              <i class="fa fa-search" aria-hidden="true">
-              </i>
-              Explore Listing
+            <a href="#main-header-section" class="icon-btn btn-readmore">
+                <i class="fa fa-search" aria-hidden="true"></i> Explore Listing
             </a>
           </div>
         </div>

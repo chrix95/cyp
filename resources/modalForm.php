@@ -87,7 +87,6 @@
   </div>
 </div>
 <!-- modal form for registration -->
-
 <!-- modal form for login -->
 <div class="modal fade" id="myLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-md" role="document">
@@ -183,6 +182,67 @@
             </div>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="cypoutlets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel"><strong>You can get the current edition 2018/19 in any of our sales outlets nationwide listed:</strong></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>The Book Sellers Ltd.52 Magazine Road, Jericho Ibadan Call Miss. Jeniyo on 08033229113. <strong>Abeokuta:</strong> 44 Quarry Road, Opp. Anglican Grammar Sch., Ibara Abeokuta. 0814-3284461</li>
+          <li>PATABAH Books Ltd. Shop B18, Adeniran Ogunsanya (SHOPRITE) Shopping Mall Surulere Lagos 0817-0641532.</li>
+          <li>Home/Office delivery in Lagos &amp; Abuja. Send your name, address &amp; Telephone number to: 08099553334(SMS only) or Call: 07031003494; 08023226459.</li>
+          <li>Ibuneth Enterprises. 43 Jimoh Balogun Str., Ikosi Ketu Lagos. Call Mrs. Christy Umanah: 0802-3217617.</li>
+          <li>Any well known Bookshops in Nigeria.
+          for enquiries; 08023226459; 07031003494 E-mail: info@countryyellowpages.net,
+          SMS only:-08099553334.</li>
+          <li>Distributors/Sales Agents needed for this Country Yellow Pages, call: 07031003494.</li>
+          <li>Corporate Bookshop: Cash &amp; Carry Plaza Marina, Lagos Island. 0704-6226902</li>
+          <li>CityWhite Management System Ltd., Block C, 2nd Floor Adebowale Building Lagos. Contact: Mr. Yemi Mafe: 08023421643.</li>
+          <li>Laterna Bookshop Oko Awo Close, Victoria Island, Lagos  0803-3014462</li>
+        </ul>
+        <p style="margin-bottom: 0px;">
+          Free delivery in: -
+          <ol>
+            <li><strong>Lagos:</strong> 07031003494; 08023226459; 08099553334;</li>
+            <li><strong>Port-Harcourt:</strong> Mr. Stephen: 08035431309; 08033681829</li>
+            <li><strong>Abuja:</strong> Mr. Coullins 07031003494; 07067857070</li>
+            <li><strong>Anambra:</strong> 39 New Market Road, (5th Floor) Onitsha - 08033190058.</li>
+            <li><strong>Lagos:</strong> Corporate Bookshop: Cash &amp; Carry Plaza Marina - 07046226902</li>
+            <li><strong>Lagos:</strong> CityWhite Management System Ltd., Block C, 2nd Floor Adebowale Building - Mr. Yemi Mafe: 08023421643</li>
+            <li><strong>e-mail:</strong> <a href="mailto:info@countryyellowpages.net">info@countryyellowpages.net</a></li>
+          </ol>
+        </p>
+        <div class="row">
+          <div class="about-info col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p>
+              <strong>A/C Name:</strong> Country Yellow Pages Directory.<br>
+              <strong>Bank:</strong> Zenith Bank Plc. <br>
+              <strong>A/c No:</strong> 1012747536 <br>
+              <strong>Sort Code:</strong> 057151258
+            </p>
+          </div>
+          <div class="about-info col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+            <p>
+              <strong>A/C Name:</strong> Country Yellow Pages Directory<br>
+              <strong>Bank:</strong> First Bank Plc<br>
+              <strong>A/c No:</strong> 2020704409<br>
+              <strong>Sort Code:</strong> 011152484
+            </p>
+          </div>
+        </div>
+        <p>
+          Best Regards <br>
+          Dionysius Nigeria Entr. Ltd.<br>
+          Publishers of Country Yellow Pages Directory.
+        </p>
       </div>
     </div>
   </div>

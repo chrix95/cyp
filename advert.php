@@ -53,17 +53,23 @@
         <div class="advert-info-section">
             <div class="container">
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-7">
                       <div class="about-info">
-                          <h2>COUNTRY YELLOW PAGES 2017/2018 EDITION </h2>
-                          <p>
-                            We are very glad to inform you that the 2015/2016 Edition of the famous COUNTRY YELLOW PAGES - 'Business Directory' is NOW ON SALE. This is the Yellow Pages that Gives You an Edge over Your Competitors’. This Edition comprises current information of all companies, organisations & Government parastatals in 36 States & FCT in Nigeria (40, 865 Entries).
-                            <br><br>The cost of Hard Cover Copy is <span>₦15,000.00 (Fifteen Thousand Naira only).</span>
-                          </p>
-                          <a href="resources/forms/price_list_2013.doc" class="advertForm">Download Advert Form &amp; Rates</a>
+                        <h2>COUNTRY YELLOW PAGES 2018/19 EDITION </h2>
+                        <p class="text-justify" style="margin-bottom: 15px;">
+                          Dear Sir/Ma,<br><br>
+
+                          We are glad to inform you that the 2018/19 edition of our National publication Country Yellow Pages Directory is NOW available for sale. The book contains the names, addresses, e-mail, website and current telephone numbers of all healthy companies in Nigeria, 36 States and FCT. The book is an A-Z Trade Directory with international standard. A Hard Cover copy is sold for <span>₦15,000.00 (Fifteen Thousand Naira only).</span> We also have soft copy and it attracts additional cost. Call 07031003494.
+                          <div class="alert alert-success" role="alert" style="margin-bottom: 0px;">
+                            <strong>For more enquiries, call our Marketing section on:</strong> <br>
+                            0703-1003494; 0802-3226459;0809-9553334; 0805-6668991 <br>
+                            <strong>e-mail: </strong><a href="mailto:info@countryyellowpages.net">info@countryyellowpages.net</a>
+        									</div>
+                        </p>
+                        <a href="resources/forms/price_list_2013.doc" class="advertForm">Download Advert Form &amp; Rates</a>
                       </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-5">
                       <div class="about-thumb">
                           <img src="assets/images/ads/onsale2016.jpg" alt="img" class="img-responsive center-block">
                       </div>
@@ -71,30 +77,27 @@
                 </div>
             </div>
         </div>
-        <div class="grabcopy-section">
+
+        <div class="grabcopy-section" id="grabcopy-section">
           <div class="container">
             <h3>Grab your own copy at the following sales centre</h3>
             <div class="row">
               <div class="col-md-6 col-lg-6">
                 <ul>
-                  <li>Lagos Island Post office (GPO)</li>
-                  <li>Adeola Odeku Victoria Island Post office</li>
-                  <li>Apapa Post office</li>
-                  <li>Murtala Mohammed Airport Post Office</li>
-                  <li>Isolo Post Office</li>
-                  <li>Ikoyi Post Office</li>
-                  <li>Festac Post office</li>
-                  <li>Ikeja Post office (GPO)</li>
-                  <li>Yaba Post office</li>
-                  <li>Agege Post office</li>
-                  <li>Otta Post office</li>
-                </ul>
-                <p>
-                  All Post Offices in Abuja including National Assembly &amp; Federal Secretariat.
-                </p>
-                <ul>
-                  <li>NIPOST Area 10 Garki Abuja</li>
-                  <li>NIPOST Wuse Zone 3, Abuja</li>
+                  <li>Post Office in Marina/Victoria Island/Ikoyi/Apapa &amp; Lagos Island.<br> Call Mr. Kingsley. 08023227048; 08163338012.</li>
+                  <li>Post Office in Ikeja along Air-Port Road./Festac Town/Ota/Mainland <br> Mrs. Cecilia Nwop. 0802-6257131</li>
+                  <li>Post Office in Abuja Area 10 Garki.<br> Mrs. Adefisan. 0806-0225905</li>
+                  <li>Any other Post Offices in Lagos &amp; Abuja. call: 07031003494</li>
+                  <li>Magazine Circulation, 91 Awolowo Road, Ikeja Lagos. (Any where in South East/South) Call Mr. Timothy on: 08033338915.</li>
+                  <li>Berachah Micro-Finance Bank. 1 CMD Road, Off Old Toll Gate Ketu/Magodo Area Lagos. Call Mr. Philips on 0809-6118352.</li>
+                  <li>Glendora Bookshop in SHOPRITE shopping Mall Alausa Ikeja Lagos</li>
+                  <li>Anderson Bookshop. 95 Ojuelegba Road, Ojuelegba Lagos. <br>Call 08073204440; 08023042307</li>
+                  <li>Laterna Bookshop Oko Awo Close, Victoria Island, Lagos  0803-3014462</li>
+                  <a href="" class="btn btn-readmore" data-toggle="modal" data-target="#cypoutlets" style="margin-top: 15px;">
+                    <i class="fa fa-user-o" aria-hidden="true">
+                    </i>
+                    View more
+                  </a>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
@@ -123,9 +126,8 @@
                 </p>
                 <hr>
                 <p>
-                  <span>Berachah Microfinance Bank Ltd.</span><br>
-                  1 CMD Road, off Old Toll Gate,<br>
-                  Ikosi Lagos.<br>
+                  <span>C/O Berachah Microfinance Bank,</span><br>
+                  1 CMD Road, off Old Toll Gate, Magodo GRA<br>
                   <span>Toun Subar:</span> 0803-3782624 <br>
                   <span>Mr. Olumide Ologun:</span> 0809-8031974
                 </p>
@@ -184,9 +186,10 @@
                       <div class="row">
                         <div class="col-md-6 col-lg-6">
                           <p>
-                            <span>Berachar Micro Finance Bank Ltd.</span><br>
-                            (Sweet Sensation Building)<br>
-                            1 CMD Road, off Old Toll Gate Ikosi Ketu Lagos; P.O.Box 55211
+                            <span>C/O Berachah Microfinance Bank,<span><br>
+                            1 CMD Road, <br>
+                            Off Old Toll Gate, <br>
+                            Magodo GRA Lagos
                           </p>
                           <hr>
                         </div>

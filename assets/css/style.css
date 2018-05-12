@@ -878,6 +878,20 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
 .advert-info-section .about-info h2 {
   font-weight: 600;
   margin-bottom: 16px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.about-info strong {
+  color: #F3AF00;
+}
+
+#cypoutlets ul, #cypoutlets p, #cypoutlets ol {
+  color: #fff;;
+}
+
+ol li strong {
+  color: #F3AF00;
 }
 
 .terms-info-section .about-info h2 {
@@ -4107,7 +4121,8 @@ ul.social li a:hover, ul.social li a:active, ul.social li a:focus {
   padding: 70px 0px;
 }
 .about-thumb img {
-  width: 200px;
+  width: 270px;
+  height: 65vh;
 }
 .modal-title {
   font-size: 17px;
@@ -4231,8 +4246,7 @@ ul.social li a:hover, ul.social li a:active, ul.social li a:focus {
 
 @media (max-width: 768px) {
   .about-thumb img {
-    width: 200px;
-    margin: 0px auto;
+    height: 53vh;
   }
   .advert.subheader {
     padding: 170px 0 80px 0;

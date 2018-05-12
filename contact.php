@@ -64,10 +64,10 @@
                         <p class="address">
                           <i class="fa fa-map-marker" aria-hidden="true"></i>
                           <span>
-                            c/o Berachah Micro Finance Bank Ltd <br>
-                            1 CMD Road <br>Magodo/Shangisha <br>
-                            Opp Old Toll Gate Ikosi Area, <br>
-                            Ketu Lagos
+                            C/O Berachah Microfinance Bank,<br>
+                            1 CMD Road,<br>
+                            Off Old Toll Gate,<br>
+                            Magodo GRA, Lagos
                           </span>
                         </p>
                         <p>
@@ -81,7 +81,7 @@
                         </p>
                         <p class="last-type">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <span>info@countryyellowpages.com</span>
+                            <span><a href="mailto:info@countryyellowpages.net">info@countryyellowpages.net</a></span>
                         </p>
                         <div class="social-with-label">
                           <span>Social Media: </span>
