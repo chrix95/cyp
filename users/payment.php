@@ -12,6 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Payment - Country Yellow Pages</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="location listing creative">
@@ -109,16 +110,19 @@
                 <script>
                   function payWithPaystack(){
                     var handler = PaystackPop.setup({
-                      key: 'pk_test_ad8895a4fe6b5f196b62a1a34a6c044addddbae1',
+                      key: 'pk_live_7ecc08b231a67b9c3d521f97ee9d94756f8831a2', // live mode key
+                      // key: 'pk_test_ad8895a4fe6b5f196b62a1a34a6c044addddbae1', // testing mode key
                       email: $('#email').val(),
-                      amount: 10000,
+                      amount: 50000,
+                      subaccount: 'ACCT_3h8ef0xqdz1zrh0',
+                      channels: ['card'],
                       ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
                       metadata: {
                          custom_fields: [
                             {
                                 display_name: "Mobile Number",
                                 variable_name: "mobile_number",
-                                value: "+2348012345678"
+                                value: "+2348183780409"
                             }
                          ]
                       },
