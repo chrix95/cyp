@@ -140,7 +140,7 @@
             <article class="latest-post">
               <div class="post-thumb">
                 <a href="javascript:void(0)">
-                  <img src="assets/images/logo.png" alt="img" class="img-responsive center-block" width="43px"">
+                  <img src="assets/images/logo.png" alt="img" class="img-responsive center-block" width="43px">
                 </a>
               </div>
               <div class="post-wrapper">
