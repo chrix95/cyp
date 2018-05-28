@@ -11,9 +11,9 @@
       $email = htmlentities(strip_tags(trim($_POST['email'])));
       $message = htmlentities(strip_tags(trim($_POST['message'])));
 
-      $to = $email;
+      $to = 'info@countryyellowpages.com';
       $subject = 'New Client Alert!!!';
-      $from = "noreply@artisans.com";
+      $from = $email;
       $body = "Hi, \n\n
              Kindly attend to this message as a new client alert has been received.
              The details are: \n\n
@@ -22,7 +22,7 @@
              Message: " . $message . " \n\n
              Please ensure that clients are treated with high quality measures.";
 
-      $success = mail($to, $subject, $body ,'mail@countryyellowpages.com');
+      $success = mail($to, $subject, $body , $from);
 
       if ($success) {
         echo "Message has been sent.";

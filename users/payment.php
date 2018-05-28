@@ -113,8 +113,8 @@
                       key: 'pk_live_7ecc08b231a67b9c3d521f97ee9d94756f8831a2', // live mode key
                       // key: 'pk_test_ad8895a4fe6b5f196b62a1a34a6c044addddbae1', // testing mode key
                       email: $('#email').val(),
-                      amount: 50000,
-                      subaccount: 'ACCT_3h8ef0xqdz1zrh0',
+                      amount: 10000,
+                      // subaccount: 'ACCT_3h8ef0xqdz1zrh0',
                       channels: ['card'],
                       ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
                       metadata: {

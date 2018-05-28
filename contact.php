@@ -46,9 +46,7 @@
                 </ol>
                 <div class="breadcrumb-call-to-action">
                     <p><i class="fa fa-phone" aria-hidden="true"></i>+234(0)809-9553334</p>
-                    <a href="javascript:void(0)" class="contact-btn">
-					Contact Us
-				</a>
+                    
                 </div>
             </div>
         </div>

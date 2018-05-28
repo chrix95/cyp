@@ -63,8 +63,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 push-lg-6 col-md-4">
-              <div class="about-thumb">
-                <img src="assets/images/logo.png" alt="img" class="img-responsive center-block">
+              <div class="">
+                <img src="assets/images/logo.png" alt="img" class="img-responsive center-block" width="185px">
               </div>
             </div>
             <div class="col-lg-6 pull-lg-6 col-md-8">
@@ -92,7 +92,7 @@
                   Award Wining Listing Site
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  We provide you with the best business directory information in the country with up-to-date resources on your preferred choice of company.
                 </p>
               </div>
             </div>
@@ -104,7 +104,7 @@
                   Dedicated Team
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  We have a strong, reliable and focused team working to ensure that the directory are always up-to-date.
                 </p>
               </div>
             </div>
@@ -116,7 +116,7 @@
                   24/7 Support
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  We are always available to provide you with assistance on our services via our phone lines and email.
                 </p>
               </div>
             </div>
@@ -204,7 +204,7 @@
             <a href="advert.php" class="icon-btn btn-readmore">
                 <i class="fa fa-search" aria-hidden="true"></i> Get hardcopy
             </a>
-            <a href="#main-header-section" class="icon-btn btn-readmore">
+            <a href="index.php#main-header-section" class="icon-btn btn-readmore">
                 <i class="fa fa-search" aria-hidden="true"></i> Explore Listing
             </a>
           </div>

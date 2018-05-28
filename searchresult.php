@@ -137,12 +137,70 @@
 	                  <strong>Total result found: <?php echo $arraySize; ?></strong>
 	                </div>
 									<?php
-                  for($x = 0; $x < 2; $x++) {
-                    $name = $success[$x]->companyName;
-                    $address = $success[$x]->companyAddress;
-                    $tel = $success[$x]->companyTel;
-                    $email = $success[$x]->companyEmail;
-                    $website = $success[$x]->companyWebsite;
+                  if ($arraySize == 1) {
+										for($x = 0; $x < 1; $x++) {
+	                    $name = $success[$x]->companyName;
+	                    $address = $success[$x]->companyAddress;
+	                    $tel = $success[$x]->companyTel;
+	                    $email = $success[$x]->companyEmail;
+	                    $website = $success[$x]->companyWebsite;
+									?>
+									<div class="clients">
+										<div class="header">
+											<h2><?php echo $name; ?></h2>
+										</div>
+										<div class="sub-header">
+											<p>
+												<i class="fa fa-map-marker" aria-hidden="true"></i>
+												<span><?php echo $address; ?></span>
+											</p>
+											<p>
+												<i class="fa fa-phone" aria-hidden="true"></i>
+												<span>
+													<?php
+														if (empty($tel)) {
+															echo "Phone number not available";
+														} else {
+															echo $tel;
+														}
+													?>
+												</span>
+											</p>
+											<p>
+												<i class="fa fa-envelope-o" aria-hidden="true"></i>
+												<span>
+													<?php
+														if (empty($email)) {
+															echo "Email address not available";
+														} else {
+															echo $email;
+														}
+													?>
+												</span>
+											</p>
+											<p>
+												<i class="fa fa-envelope-o" aria-hidden="true"></i>
+												<span>
+													<?php
+														if (empty($website)) {
+															echo "Website not available";
+														} else {
+															echo '<a href="http://'.$website.'" target="_blank">'.$website.'</a>';
+														}
+													?>
+												</span>
+											</p>
+										</div>
+									</div>
+									<?php
+									}
+                  } else {
+										for($x = 0; $x < 2; $x++) {
+	                    $name = $success[$x]->companyName;
+	                    $address = $success[$x]->companyAddress;
+	                    $tel = $success[$x]->companyTel;
+	                    $email = $success[$x]->companyEmail;
+	                    $website = $success[$x]->companyWebsite;
                   ?>
 
                   <div class="clients">
@@ -195,7 +253,7 @@
 
                 <?php
                   }
-
+									}
                 }
 
                 ?>

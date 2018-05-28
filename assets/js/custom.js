@@ -388,6 +388,7 @@ jQuery(document).ready(function () {
             "font-size":"18px",
             "text-align":"center"
           });
+          $('.form-control').val('');
   				$('p#message').text(data);
   				console.log(data);
           setTimeout("$('p#message').text('')", 5000);

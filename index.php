@@ -99,7 +99,7 @@
                         </div>
                         <div class="listing-promote-block">
                             <span class="ti-announcement"></span>
-                            <p>Submit your Free Listing</p>
+                            <p>View Free Listing</p>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
               </div>
               <div class="col-md-4">
                 <div class="about-thumb">
-                    <a href="advert.php"><img src="assets/images/ads/onsale2016.jpg" alt="img" class="img-responsive"></a>
+                    <a href="advert.php"><img src="assets/images/ads/onsale2016.jpg" alt="img" class="img-responsive" style="height: 39vh"></a>
                 </div>
               </div>
             </div>
@@ -362,7 +362,7 @@
                     Start today to get more exposure and <br> grow your business
                 </h2>
                 <p>
-                    There are many consumers &amp; business owners who finds this directory is helpful.
+                    There are many consumers &amp; business owners who finds this directory very helpful.
                 </p>
                 <div class="btn-group">
                   <a href="#main-header-section" class="icon-btn btn-readmore">
