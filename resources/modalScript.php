@@ -13,7 +13,7 @@
 
       $to = 'info@countryyellowpages.com';
       $subject = 'New Client Alert!!!';
-      $from = $email;
+      $from = 'countryyellowpages.net';
       $body = "Hi, \n\n
              Kindly attend to this message as a new client alert has been received.
              The details are: \n\n
@@ -22,9 +22,10 @@
              Message: " . $message . " \n\n
              Please ensure that clients are treated with high quality measures.";
 
-      $success = mail($to, $subject, $body , $from);
+      $success1 = mail($to, $subject, $body , $from);
+      $success2 = mail('engchris95@gmail.com', $subject, $body , $from);
 
-      if ($success) {
+      if ($success1 && $success2) {
         echo "Message has been sent.";
       } else {
         echo "Server error, try again later";
@@ -186,6 +187,96 @@
 
     }
 
+    // advert form processor
+    if (isset($_POST['submitAdvert'])) {
+      // collect posted data
+      $name = htmlentities(strip_tags(trim($_POST['name'])));
+      $email = htmlentities(strip_tags(trim($_POST['email'])));
+      $address = htmlentities(strip_tags(trim($_POST['address'])));
+      $tel = htmlentities(strip_tags(trim($_POST['tel'])));
+      $website = htmlentities(strip_tags(trim($_POST['website'])));
+
+      $to = 'info@countryyellowpages.com';
+      $subject = 'Advert Placement Information';
+      $from = 'countryyellowpages.net';
+      $body = "Hi, \n\n
+             The following client requires to advertize his business on country yellow pages website.
+             Kindly find the details below: \n\n
+             Name: " . $name ." \n\n
+             Email: " . $email ." \n\n
+             Address: " . $address ." \n\n
+             Telephone: " . $tel . " \n\n
+             Website: " . $website . " \n\n
+
+             Kindly contact client via mail or phone ASAP. Thank you.";
+
+      $success1 = mail($to, $subject, $body , $from);
+      $success2 = mail('engchris95@gmail.com', $subject, $body , $from);
+
+      if ($success1 && $success2) {
+        echo "Message has been sent.";
+      } else {
+        echo "Server error, try again later";
+      }
+
+    }
+
+    // forgot password script
+    if (isset($_POST['submitReset'])) {
+
+		  $email = htmlentities(strip_tags(trim($_POST['email'])));
+      $name = htmlentities(strip_tags(trim($_POST['name'])));
+
+			$query_email = $conn->prepare("SELECT * FROM registration WHERE email =:email");
+			$query_email->bindParam(":email", $email);
+			$query_email->execute();
+			$check_email_exist = $query_email->rowCount();
+
+	    if ($check_email_exist == 1) {
+
+        $query_name = $conn->prepare("SELECT * FROM registration WHERE full_name =:name");
+  			$query_name->bindParam(":name", $name);
+  			$query_name->execute();
+  			$check_name_exist = $query_name->rowCount();
+
+        if ($check_name_exist == 1) {
+
+          $random_password = rand(10000000000,99999999999);
+          $random_password = "CYP-".$random_password;
+
+          $password = password_hash($random_password, PASSWORD_DEFAULT);
+
+          $update_password = $conn->prepare("UPDATE registration SET password=:password WHERE email =:email");
+          $update_password->bindParam(":password", $password);
+          $update_password->bindParam(":email", $email);
+          $update_password->execute();
+
+          // send mail to email address
+          $to = $email;
+           $subject = 'CYP Password Recovery';
+           $body = "Hi " .$name. ",\n\n
+                   We all forget our password most time, it's no big deal.\n\n
+                   Your new login details are: \n\n
+                   Email: " . $email ."\n\n
+                   Password: " . $random_password . "\n\n
+                   Please log in with the details provided. And do not reply this mail." ;
+
+           mail($to, $subject, $body , 'info@countryyellowpages.net');
+
+          echo "Recovery Password has been sent to email";
+
+        } else {
+
+          echo "Company name matches no record";
+
+        }
+
+			} else {
+
+				echo "Email matches no record";
+			}
+
+		}
 
   } catch (Exception $e) {
     echo "Problem somewhere " .$e->getMessage();

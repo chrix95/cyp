@@ -114,13 +114,42 @@
             </div>
           </div>
           <div class="row">
+            <div class="col-md-4">
+              <p id="message" style="color: red"></p>
+            </div>
+            <div class="col-md-8">
+              <div class="pull-right">
+                <button type="submit" name="submitLogin" class="btn findOut">Login</button>
+                <button type="button" class="btn findOut closeBtn" id="check">Forgot Password</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form id="fpassForm" class="modalForm" action="resources/modalScript.php" method="POST" autocomplete="off">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="control-label">Company Name</label>
+                <input type="text" class="form-control" placeholder="Company Name" name="name" autofocus="yes">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="control-label">Email</label>
+                <input type="email" class="form-control" placeholder="Email" name="email">
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-md-6">
               <p id="message" style="color: red"></p>
             </div>
             <div class="col-md-6">
               <div class="pull-right">
-                <button type="submit" name="submitLogin" class="btn findOut">Login</button>
-                <button type="button" class="btn findOut closeBtn" data-dismiss="modal">Close</button>
+                <button type="submit" name="submitReset" class="btn findOut">Reset</button>
+                <button type="button" class="btn findOut" id="back">Back</button>
               </div>
             </div>
           </div>
@@ -243,6 +272,68 @@
           Dionysius Nigeria Entr. Ltd.<br>
           Publishers of Country Yellow Pages Directory.
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="advertRequestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel"><strong>Advertisement Booking / Registration Form</strong></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form id="advertRequestForm" class="modalForm" action="resources/modalScript.php" method="POST" autocomplete="off">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label">Name of Organization</label>
+                <input type="text" class="form-control" placeholder="Name of Organization" name="name" autofocus="yes">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label">Email</label>
+                <input type="email" class="form-control" placeholder="Email" name="email">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="control-label">Address</label>
+                <textarea name="address" class="form-control" placeholder="Business Address" rows="8" cols="80"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label">Telephone</label>
+                <input type="text" class="form-control" placeholder="Telephone" name="tel">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label">Website</label>
+                <input type="text" class="form-control" placeholder="Website" name="website">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p id="message" style="color: red"></p>
+            </div>
+            <div class="col-md-6">
+              <div class="pull-right">
+                <button type="submit" name="submitAdvert" class="btn findOut">Submit</button>
+                <button type="button" class="btn findOut closeBtn" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

@@ -1,7 +1,9 @@
 <?php
 
   try {
+
     session_start();
+
     include 'resources/connection.php';
 
     if (isset($_POST['searchbutton'])) {
@@ -179,10 +181,6 @@
       } else {
         echo "Payment incomplete";
       }
-
-    } else {
-
-      echo "Not set";
 
     }
 

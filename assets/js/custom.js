@@ -385,7 +385,7 @@ jQuery(document).ready(function () {
   			if (data == 'Message has been sent.') {
   				$('p#message').css({
             "color":"green",
-            "font-size":"18px",
+            "font-size":"16px",
             "text-align":"center"
           });
           $('.form-control').val('');
@@ -493,7 +493,7 @@ jQuery(document).ready(function () {
 
   				$('p#message').css({
             "color":"red",
-            "font-size": "18px"
+            "font-size": "15px"
           });
   				$('p#message').text(data);
   				console.log(data);
@@ -502,7 +502,7 @@ jQuery(document).ready(function () {
 
   				$('p#message').css({
             "color":"red",
-            "font-size": "18px"
+            "font-size": "15px"
           });
   				$('p#message').text(data);
   				console.log(data);
@@ -511,7 +511,7 @@ jQuery(document).ready(function () {
 
   				$('p#message').css({
             "color":"red",
-            "font-size": "18px"
+            "font-size": "15px"
           });
   				$('p#message').text(data);
   				console.log(data);
@@ -600,9 +600,161 @@ jQuery(document).ready(function () {
 
   });
 
+  $('#advertRequestForm').validate({
+  	rules: {
+  		name: {
+  			required: true
+  		},
+      email: {
+  			required: true,
+  			email: true
+  		},
+      address: {
+  			required: true
+  		},
+      tel: {
+  			required: true
+  		},
+  		website: {
+  			required: true
+  		}
+    },
+
+    submitHandler: function() {
+
+  		var that = $('#advertRequestForm'),
+  				url = that.attr('action'),
+  				type = that.attr('method'),
+  				data = {};
+
+  		that.find('[name]').each(function(index, value){
+  				var that = $(this),
+  					name = that.attr('name'),
+  					value = that.val();
+
+  				data[name] = value;
+  		});
+
+  		$.ajax({
+  			url: 'resources/modalScript.php',
+  			type: 'POST',
+  			data: data
+  		})
+
+  		.done(function(data){
+        if (data == 'Message has been sent.') {
+  				$('p#message').css({
+            "color":"fff",
+            "font-size":"16px",
+            "text-align":"center"
+          });
+          $('.form-control').val('');
+  				$('p#message').text(data);
+  				console.log(data);
+          setTimeout("$('p#message').text('')", 5000);
+
+  			} else if (data == 'Server error, try again later') {
+
+  				$('p#message').css("color", "#fff");
+  				$('p#message').text(data);
+  				console.log(data);
+          setTimeout("$('p#message').text('')", 5000);
+  			}
+  		})
+
+  		.fail(function(data){
+  			console.log("error encountered");
+  		});
+
+  	}
+
+  });
+
   $('.closeBtn').click(function(){
     $('.form-control').val('');
     $('p#message').text('');
+  });
+
+  // hides login form and displays forgot password form
+  $('#check').click(function (){
+    $('#loginForm').css("display","none");
+    $('#fpassForm').css("display","block");
+  });
+
+  $('#back').click(function (){
+    $('#fpassForm').css("display","none");
+    $('#loginForm').css("display","block");
+    $('#fpassForm .form-control').val('');
+    $('#message').text('');
+    $('.error').text('');
+  });
+
+  // forgot password
+  $('#fpassForm').validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+      name: {
+        required: true
+      }
+    },
+
+    submitHandler: function() {
+
+      var that = $('#fpassForm'),
+          url = that.attr('action'),
+          type = that.attr('method'),
+          data = {};
+
+      that.find('[name]').each(function(index, value){
+          var that = $(this),
+            name = that.attr('name'),
+            value = that.val();
+
+          data[name] = value;
+      });
+
+      $.ajax({
+        url: 'resources/modalScript.php',
+        type: 'POST',
+        data: data
+      })
+
+      .done(function(data){
+        if (data == 'Recovery Password has been sent to email') {
+          $('p#message').css({
+            "color":"#fff",
+            "font-size": "15px"
+          });
+          $('p#message').text(data);
+          setTimeout("$('p#message').text('')", 3000);
+          $('#loginForm').css("display","block");
+          $('#fpassForm').css("display","none");
+          $('#fpassForm .form-control').val('');
+        } else if (data == 'Company name matches no record') {
+
+          $('p#message').css("color", "#F3AF00");
+          $('p#message').text(data);
+          console.log(data);
+          setTimeout("$('p#message').text('')", 2000);
+        } else if (data == 'Email matches no record') {
+
+          $('p#message').css("color", "#F3AF00");
+          $('p#message').text(data);
+          console.log(data);
+          setTimeout("$('p#message').text('')", 2000);
+        }
+
+      })
+
+      .fail(function(data){
+        console.log("error encountered");
+      });
+
+    }
+
   });
 
 });

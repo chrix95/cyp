@@ -4146,6 +4146,23 @@ ul.social li a:hover, ul.social li a:active, ul.social li a:focus {
     background-color: #ec3237;
     border-color: transparent;
 }
+.btn-advert {
+  background-color: white;
+  color: #F3AF00;
+  font-size: 14px;
+  border-radius: 0px;
+  border: 1px solid #F3AF00;
+}
+.btn-advert:hover {
+  background-color: #F3AF00;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0px;
+  border: 1px solid #F3AF00;
+}
+.btn-advert:focus {
+  box-shadow: 0 0 0 2px rgba(243, 175, 0, 0.25);
+}
 #searchbutton {
   border-radius: 0;
   padding: 15px;

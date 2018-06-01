@@ -1,9 +1,10 @@
 <?php
   session_start();
   // var_dump($_SESSION['details']);
-  if (!isset($_SESSION['size']) || !isset($_SESSION['success'])) {
+  if (!isset($_SESSION['size']) || !isset($_SESSION['success']) || !isset($_SESSION['email'])) {
     $_SESSION['size'] = '';
     $_SESSION['success'] = '';
+    header("location: logout.php");
   } else {
     if ($_SESSION['details']->updated == 0) {
       header("location: payment.php");
@@ -46,7 +47,7 @@
     <div class="side-menu">
       <nav id="cbp-spmenu-s1" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
         <div class="profile">
-          <img src="../assets/images/demo-user.png" class="img img-responsive center-block img-thumbnail" width="70%"/>
+          <img src="../assets/images/logo.png" class="img img-responsive center-block" width="40%"/>
           <h5 class="text-center">
             <?php echo $_SESSION['details']->full_name; ?>
           </h5>
@@ -246,50 +247,57 @@
                 ?>
 
                 <div class="clients">
-                  <div class="header">
-                    <h2><?php echo $name; ?></h2>
-                  </div>
-                  <div class="sub-header">
-                    <p>
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                      <span><?php echo $address; ?></span>
-                    </p>
-                    <p>
-                      <i class="fa fa-phone" aria-hidden="true"></i>
-                      <span>
-                        <?php
-                          if (empty($tel)) {
-                            echo "Phone number not available";
-                          } else {
-                            echo $tel;
-                          }
-                        ?>
-                      </span>
-                    </p>
-                    <p>
-                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                      <span>
-                        <?php
-                          if (empty($email)) {
-                            echo "Email address not available";
-                          } else {
-                            echo $email;
-                          }
-                        ?>
-                      </span>
-                    </p>
-                    <p>
-                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                      <span>
-                        <?php
-                          if (empty($website)) {
-                            echo "Website not available";
-                          } else {
-                            echo '<a href="http://'.$website.'" target="_blank">'.$website.'</a>';
-                          }
-                        ?>
-                      </span>
-                    </p>
+                  <div class="row">
+                    <div class="col-md-2 hidCol">
+                      <img src="../assets/images/logo.png" class="img img-responsive center-block comImag"/>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="header">
+                        <h2><?php echo $name; ?></h2>
+                      </div>
+                      <div class="sub-header">
+                        <p>
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          <span><?php echo $address; ?></span>
+                        </p>
+                        <p>
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                          <span>
+                            <?php
+                              if (empty($tel)) {
+                                echo "Phone number not available";
+                              } else {
+                                echo $tel;
+                              }
+                            ?>
+                          </span>
+                        </p>
+                        <p>
+                          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                          <span>
+                            <?php
+                              if (empty($email)) {
+                                echo "Email address not available";
+                              } else {
+                                echo $email;
+                              }
+                            ?>
+                          </span>
+                        </p>
+                        <p>
+                          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                          <span>
+                            <?php
+                              if (empty($website)) {
+                                echo "Website not available";
+                              } else {
+                                echo '<a href="http://'.$website.'" target="_blank">'.$website.'</a>';
+                              }
+                            ?>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 

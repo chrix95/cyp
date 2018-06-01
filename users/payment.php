@@ -1,9 +1,10 @@
 <?php
   session_start();
   // var_dump($_SESSION['details']);
-  if (!isset($_SESSION['size']) || !isset($_SESSION['success'])) {
+  if (!isset($_SESSION['size']) || !isset($_SESSION['success']) || !isset($_SESSION['email'])) {
     $_SESSION['size'] = '';
     $_SESSION['success'] = '';
+    header("location: logout.php");
   } else {
 ?>
 <!DOCTYPE html>
@@ -32,9 +33,8 @@
     <link rel="stylesheet" href="../assets/css/jquery.bxslider.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-
     <link rel="stylesheet" href="../assets/css/style2.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body class="dashboard">
     <div class="main-wrap">
@@ -95,6 +95,7 @@
                 <?php if ($_SESSION['details']->updated == 0): ?>
                   <div class="unpaid">
                     <h5>Payment has not been made yet. Kindly make payment</h5>
+                    <h6>Registration for Unlimited Access to directory comes with a free copy of Country Yellow Pages Directory @ #25,000.00</h6><br>
                     <form >
                       <script src="https://js.paystack.co/v1/inline.js"></script>
                       <input type="text" name="email" value="<?php echo $_SESSION['details']->email;?>" style="display: none;" id="email">
@@ -104,7 +105,7 @@
                 <?php endif; ?>
                 <?php if ($_SESSION['details']->updated == 1): ?>
                   <div id="paid">
-                    <h5>Thanks. Payment has been completed</h5>
+                    <h5>Payment has been received. Thank you</h5>
                   </div>
                 <?php endif; ?>
                 <script>
@@ -113,7 +114,7 @@
                       key: 'pk_live_7ecc08b231a67b9c3d521f97ee9d94756f8831a2', // live mode key
                       // key: 'pk_test_ad8895a4fe6b5f196b62a1a34a6c044addddbae1', // testing mode key
                       email: $('#email').val(),
-                      amount: 10000,
+                      amount: 2500000,
                       // subaccount: 'ACCT_3h8ef0xqdz1zrh0',
                       channels: ['card'],
                       ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you

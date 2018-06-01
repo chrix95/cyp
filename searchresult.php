@@ -146,50 +146,57 @@
 	                    $website = $success[$x]->companyWebsite;
 									?>
 									<div class="clients">
-										<div class="header">
-											<h2><?php echo $name; ?></h2>
-										</div>
-										<div class="sub-header">
-											<p>
-												<i class="fa fa-map-marker" aria-hidden="true"></i>
-												<span><?php echo $address; ?></span>
-											</p>
-											<p>
-												<i class="fa fa-phone" aria-hidden="true"></i>
-												<span>
-													<?php
-														if (empty($tel)) {
-															echo "Phone number not available";
-														} else {
-															echo $tel;
-														}
-													?>
-												</span>
-											</p>
-											<p>
-												<i class="fa fa-envelope-o" aria-hidden="true"></i>
-												<span>
-													<?php
-														if (empty($email)) {
-															echo "Email address not available";
-														} else {
-															echo $email;
-														}
-													?>
-												</span>
-											</p>
-											<p>
-												<i class="fa fa-envelope-o" aria-hidden="true"></i>
-												<span>
-													<?php
-														if (empty($website)) {
-															echo "Website not available";
-														} else {
-															echo '<a href="http://'.$website.'" target="_blank">'.$website.'</a>';
-														}
-													?>
-												</span>
-											</p>
+										<div class="row">
+											<div class="col-md-2 hidCol">
+												<img src="assets/images/logo.png" class="img img-responsive center-block comImag"/>
+											</div>
+											<div class="col-md-10">
+												<div class="header">
+													<h2><?php echo $name; ?></h2>
+												</div>
+												<div class="sub-header">
+													<p>
+														<i class="fa fa-map-marker" aria-hidden="true"></i>
+														<span><?php echo $address; ?></span>
+													</p>
+													<p>
+														<i class="fa fa-phone" aria-hidden="true"></i>
+														<span>
+															<?php
+																if (empty($tel)) {
+																	echo "Phone number not available";
+																} else {
+																	echo $tel;
+																}
+															?>
+														</span>
+													</p>
+													<p>
+														<i class="fa fa-envelope-o" aria-hidden="true"></i>
+														<span>
+															<?php
+																if (empty($email)) {
+																	echo "Email address not available";
+																} else {
+																	echo $email;
+																}
+															?>
+														</span>
+													</p>
+													<p>
+														<i class="fa fa-envelope-o" aria-hidden="true"></i>
+														<span>
+															<?php
+																if (empty($website)) {
+																	echo "Website not available";
+																} else {
+																	echo '<a href="http://'.$website.'" target="_blank">'.$website.'</a>';
+																}
+															?>
+														</span>
+													</p>
+												</div>
+											</div>
 										</div>
 									</div>
 									<?php
@@ -204,50 +211,57 @@
                   ?>
 
                   <div class="clients">
-                    <div class="header">
-                      <h2><?php echo $name; ?></h2>
-                    </div>
-                    <div class="sub-header">
-                      <p>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span><?php echo $address; ?></span>
-                      </p>
-                      <p>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>
-                          <?php
-                            if (empty($tel)) {
-                              echo "Phone number not available";
-                            } else {
-                              echo $tel;
-                            }
-                          ?>
-                        </span>
-                      </p>
-                      <p>
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <span>
-                          <?php
-                            if (empty($email)) {
-                              echo "Email address not available";
-                            } else {
-                              echo $email;
-                            }
-                          ?>
-                        </span>
-                      </p>
-                      <p>
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <span>
-                          <?php
-                            if (empty($website)) {
-                              echo "Website not available";
-                            } else {
-                              echo '<a href="http://'.$website.'" target="_blank">'.$website.'</a>';
-                            }
-                          ?>
-                        </span>
-                      </p>
+                    <div class="row">
+											<div class="col-md-2 hidCol">
+												<img src="assets/images/logo.png" class="img img-responsive center-block comImag"/>
+											</div>
+											<div class="col-md-10">
+												<div class="header">
+		                      <h2><?php echo $name; ?></h2>
+		                    </div>
+		                    <div class="sub-header">
+		                      <p>
+		                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+		                        <span><?php echo $address; ?></span>
+		                      </p>
+		                      <p>
+		                        <i class="fa fa-phone" aria-hidden="true"></i>
+		                        <span>
+		                          <?php
+		                            if (empty($tel)) {
+		                              echo "Phone number not available";
+		                            } else {
+		                              echo $tel;
+		                            }
+		                          ?>
+		                        </span>
+		                      </p>
+		                      <p>
+		                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+		                        <span>
+		                          <?php
+		                            if (empty($email)) {
+		                              echo "Email address not available";
+		                            } else {
+		                              echo $email;
+		                            }
+		                          ?>
+		                        </span>
+		                      </p>
+		                      <p>
+		                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+		                        <span>
+		                          <?php
+		                            if (empty($website)) {
+		                              echo "Website not available";
+		                            } else {
+		                              echo '<a href="http://'.$website.'" target="_blank">'.$website.'</a>';
+		                            }
+		                          ?>
+		                        </span>
+		                      </p>
+		                    </div>
+											</div>
                     </div>
                   </div>
 

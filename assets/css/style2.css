@@ -12,12 +12,21 @@
   font-size: 20px;
   margin: 0px 10px 0px 0px;
 }
+#fpassForm {
+  display: none;
+}
 .clients {
     background-color: rgba(42, 21, 114, 0.53);
     padding: 15px 15px 10px 20px;
     margin: 20px 0px;
     border-radius: 5px;
     box-shadow: 0px 4px 17px 4px rgba(10, 10, 10, 0.27);
+}
+.user-panel1 {
+  width: 450px;
+}
+.comImag {
+  margin-top: 25%;
 }
 label#location-error, label#category-error, label#keyword-error {
   color: #fff;
@@ -143,6 +152,9 @@ button.btn.findOut {
 @media (max-width: 768px) {
   #searchbutton2, #searchbutton {
     margin-top: 15px;
+  }
+  .hidCol {
+    display: none;
   }
   .adSideBar h2 {
     margin-top: 20px;

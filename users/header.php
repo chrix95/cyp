@@ -1,5 +1,11 @@
-<div class="main-nav-section">
-  <div class="user-panel"  style="width: 450px;">
+<?php
+
+  if (!isset($_SESSION['email'])) {
+    header("location: index.php");
+  } else {
+?>
+  <div class="main-nav-section">
+  <div class="user-panel user-panel1">
     <a href="logout.php" class="user-register-btn border-btn">
       <i class="fa fa-user-o" aria-hidden="true">
       </i>
@@ -62,3 +68,7 @@
     </div>
   </nav>
 </div>
+
+<?php
+  }
+?>

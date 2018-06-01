@@ -67,7 +67,12 @@
                             <strong>e-mail: </strong><a href="mailto:info@countryyellowpages.net">info@countryyellowpages.net</a>
         									</div>
                         </p>
-                        <a href="resources/forms/price_list_2013.doc" class="advertForm">Download Advert Form &amp; Rates</a>
+                        <a href="" class="btn btn-advert" data-toggle="modal" data-target="#advertRequestModal">
+                          Advert Booking
+                        </a>
+                        <a href="resources/forms/price_list_2018.doc" class="btn btn-advert">
+                          View Advert Rates
+                        </a>
                       </div>
                   </div>
                   <div class="col-md-5">
