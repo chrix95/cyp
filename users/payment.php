@@ -44,7 +44,7 @@
     <div class="side-menu">
       <nav id="cbp-spmenu-s1" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
         <div class="profile">
-          <img src="../assets/images/demo-user.png" class="img img-responsive center-block img-thumbnail" width="70%"/>
+          <img src="../assets/images/logo.png" class="img img-responsive center-block" width="40%"/>
           <h5 class="text-center">
             <?php echo $_SESSION['details']->full_name; ?>
           </h5>
@@ -111,7 +111,7 @@
                 <script>
                   function payWithPaystack(){
                     var handler = PaystackPop.setup({
-                      key: 'pk_live_7ecc08b231a67b9c3d521f97ee9d94756f8831a2', // live mode key
+                      key: 'pk_live_3187f5759cb5c291239a04c52394e21a6b3552af', // live mode key
                       // key: 'pk_test_ad8895a4fe6b5f196b62a1a34a6c044addddbae1', // testing mode key
                       email: $('#email').val(),
                       amount: 2500000,
