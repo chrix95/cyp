@@ -15,6 +15,29 @@
 #fpassForm {
   display: none;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-weight: 900;
+  z-index: 99;
+  font-size: 26px;
+  border: 1px solid blue;
+  outline: none;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 11px;
+  border-radius: 0px;
+}
+
+#myBtn:hover {
+  background-color: #f3b002;
+  color: #fff;
+  border: 1px solid #f3b002;
+}
+
 .clients {
     background-color: rgba(42, 21, 114, 0.53);
     padding: 15px 15px 10px 20px;

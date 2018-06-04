@@ -711,7 +711,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
   padding: 170px 0 120px 0;
   position: relative;
   text-align: center;
-  /*background: url('../images/background/aboutus.jpg') center center no-repeat;*/
+  background: url('../images/background/search.jpg') center center no-repeat;
   background-size: cover;
   background-color: #fff;
 }

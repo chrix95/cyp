@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body class="dashboard">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <div class="main-wrap">
 		<!-- Main Navigation -->
     <?php include 'header.php'; ?>
@@ -147,7 +148,7 @@
                   <?php
                     require '../resources/connection.php';
 
-                    $info = "Maintenance Services";
+                    $info = "Oil and Gas";
                     $get_listings = $conn->prepare("SELECT id FROM contact WHERE companyCategory=:category");
                     $get_listings->bindParam(":category", $info);
                     $get_listings->execute();
@@ -161,7 +162,6 @@
 								</div><!-- nmbr-statistic-block -->
 							</div><!-- widget-module -->
 						</div>
-
 					</div>
 				</div><!-- nmbr-statistic-area -->
         <div class="row">
@@ -311,6 +311,7 @@
             <!-- end result area -->
           </div>
         </div>
+
 			</div>
 		</div>
 	</div>
@@ -327,6 +328,7 @@
     <script src="../assets/js/jquery.accordion.js"></script>
     <script src="../assets/js/jquery.slimscroll.min.js"></script>
     <script src="../assets/js/jquery.validate.min.js"></script>
+    <script src="../assets/js/scrollJS.js"></script>
 
     <!-- Tinymce-JS -->
     <script src="../assets/js/tinymce/tinymce.min.js"></script>
@@ -375,7 +377,15 @@
               required: true,
             }
           },
-
+          submitHandler: function(){
+            $('#searchbutton2').text('Please wait...');
+            $('#searchbutton2').css("cursor","wait");
+            $.ajax({
+              url: '../scrit.php',
+              type: 'POST',
+              data: data
+            })
+          }
         });
 
         $('#passwordForm').validate({

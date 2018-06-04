@@ -29,6 +29,7 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <div class="main-wrap">
         <!-- Main Navigation -->
         <?php include 'header.php'; ?>
@@ -379,7 +380,6 @@
       <!-- animation slider -->
       <script type="text/javascript" src="assets/js/background.cycle.js"></script>
       <!-- Google-map -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
       <script src="assets/js/gmap3.min.js"></script>
       <!-- <script src="js/custom.js"></script> -->
       <script type="text/javascript">
@@ -395,50 +395,6 @@
                   backgroundSize: SCALING_MODE_COVER
               });
           });
-      </script>
-  	<script type="text/javascript">
-  		function listingModalMap(selector,centerLatLng,markerLatLng){
-  			$(selector).gmap3({
-  				map: {
-  					options: {
-  						zoom: 6,
-  						center: [centerLatLng.lat, centerLatLng.lng],
-  						mapTypeControl: true,
-  						mapTypeControlOptions: {
-  							style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-  						},
-  						mapTypeId: "style1",
-  						mapTypeControlOptions: {
-  							mapTypeIds: [google.maps.MapTypeId.ROADMAP, "style1"]
-  						},
-  						navigationControl: true,
-  						scrollwheel: false,
-  						streetViewControl: true
-  					}
-  				},
-  				marker: {
-  					latLng: [markerLatLng.lat, markerLatLng.lng],
-  					options: {animation:google.maps.Animation.BOUNCE, icon: 'assets/images/markers/listing-post-pointer.png' }
-  				},
-  				styledmaptype: {
-  					id: "style1",
-  					options: {
-  						name: "Style 1"
-  					}
-  				}
-  			});
-  		}
-  		var centerLatLng = {
-  			lat: 44.785091,
-  			lng: -79.968285
-  		};
-  		var markerLatLng = {
-  			lat: 40.785091,
-  			lng: -73.968285
-  		};
-  		listingModalMap('#listing_post_map_one',centerLatLng,markerLatLng);
-  		listingModalMap('#listing_post_map_two',centerLatLng,markerLatLng);
-  		listingModalMap('#listing_post_map_three',centerLatLng,markerLatLng);
       </script>
 </body>
 </html>

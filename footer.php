@@ -211,4 +211,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
 <script src="assets/js/gmap3.min.js"></script>
 <script src="assets/js/infobox.js"></script>
+<script src="assets/js/scrollJS.js" charset="utf-8"></script>
 <script src="assets/js/custom.js"></script></body></html>

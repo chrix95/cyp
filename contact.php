@@ -27,9 +27,9 @@
     <link rel="stylesheet" href="assets/css/style2.css">
 
     <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <div class="main-wrap">
         <!-- Main Navigation -->
         <?php include 'header.php'; ?>
@@ -46,7 +46,7 @@
                 </ol>
                 <div class="breadcrumb-call-to-action">
                     <p><i class="fa fa-phone" aria-hidden="true"></i>+234(0)809-9553334</p>
-                    
+
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
                           </div>
                           <div class="row">
                             <div class="col-md-12">
-                              <button class="btn btn-primary btn-send-message" name="sendMessage">
+                              <button class="btn btn-primary btn-send-message" name="sendMessage" id="sendMessage">
                                 Send Message
                               </button>
                             </div>
@@ -150,41 +150,7 @@
             </div>
         </div>
         <!-- contact-section -->
-        <div id="map_full_width_one" class="map-full-width-one"></div>
         <?php include 'footer.php'; ?>
     </div>
-    <script type="text/javascript">
-
-        $('#map_full_width_one').gmap3({
-            map: {
-                options: {
-                    zoom: 5,
-                    center: [41.785091, -73.968285],
-                    mapTypeControl: true,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                    },
-                    mapTypeId: "style1",
-                    mapTypeControlOptions: {
-                        mapTypeIds: [google.maps.MapTypeId.ROADMAP, "style1"]
-                    },
-                    navigationControl: true,
-                    scrollwheel: false,
-                    streetViewControl: true
-                }
-            },
-            marker: {
-                latLng: [40.785091, -73.968285],
-                options: {animation:google.maps.Animation.BOUNCE, icon: 'images/markers/small-marker.png' }
-            },
-            styledmaptype: {
-                id: "style1",
-                options: {
-                    name: "Style 1"
-                },
-
-            }
-        });
-    </script>
 </body>
 </html>

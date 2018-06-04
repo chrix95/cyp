@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <div class="main-wrap">
       <!-- Main Navigation -->
       <?php include "header.php"; ?>

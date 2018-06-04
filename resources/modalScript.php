@@ -212,6 +212,7 @@
 
       $success1 = mail($to, $subject, $body , $from);
       $success2 = mail('engchris95@gmail.com', $subject, $body , $from);
+      $success3 = mail('saviourjohnson92@gmail.com', $subject, $body , $from);
 
       if ($success1 && $success2) {
         echo "Message has been sent.";

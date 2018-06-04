@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <div class="main-wrap">
       <!-- Main Navigation -->
       <?php include "header.php"; ?>
@@ -92,7 +93,7 @@
                   Award Wining Listing Site
                 </h4>
                 <p>
-                  We provide you with the best business directory information in the country with up-to-date resources on your preferred choice of company.
+                  We provide you with the best business directory information of your company choice in the country.
                 </p>
               </div>
             </div>

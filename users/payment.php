@@ -45,7 +45,7 @@
       <nav id="cbp-spmenu-s1" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
         <div class="profile">
           <img src="../assets/images/logo.png" class="img img-responsive center-block" width="40%"/>
-          <h5 class="text-center">
+          <h5 class="text-center" id="name">
             <?php echo $_SESSION['details']->full_name; ?>
           </h5>
           <p class="text-center" style="line-height: 18px;font-style: italic;">
@@ -121,9 +121,9 @@
                       metadata: {
                          custom_fields: [
                             {
-                                display_name: "Mobile Number",
-                                variable_name: "mobile_number",
-                                value: "+2348183780409"
+                                display_name: "Customer Name",
+                                variable_name: "customer_name",
+                                value: $('#name').text()
                             }
                          ]
                       },

@@ -267,11 +267,16 @@
             </p>
           </div>
         </div>
-        <p>
-          Best Regards <br>
-          Dionysius Nigeria Entr. Ltd.<br>
-          Publishers of Country Yellow Pages Directory.
-        </p>
+        <div class="col-md-12">
+          <p>
+            Best Regards <br>
+            Dionysius Nigeria Entr. Ltd.<br>
+            Publishers of Country Yellow Pages Directory.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <button type="button" class="btn findOut pull-right closeBtn" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>

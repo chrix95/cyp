@@ -15,6 +15,8 @@ jQuery(document).ready(function () {
       }
   });
 
+
+
   /*--------------------------------------------
   		Responsive-menu Settings
   ---------------------------------------------*/
@@ -361,6 +363,8 @@ jQuery(document).ready(function () {
   	},
 
     submitHandler: function() {
+      $('#sendMessage').text('Sending message...');
+      $('#sendMessage').css("cursor","not-allowed");
 
   		var that = $('#contactForm'),
   				url = that.attr('action'),
@@ -390,14 +394,16 @@ jQuery(document).ready(function () {
           });
           $('.form-control').val('');
   				$('p#message').text(data);
-  				console.log(data);
+          $('#sendMessage').text('Send Message');
+          $('#sendMessage').css("cursor","default");
           setTimeout("$('p#message').text('')", 5000);
 
   			} else if (data == 'Server error, try again later') {
 
   				$('p#message').css("color", "red");
   				$('p#message').text(data);
-  				console.log(data);
+          $('#sendMessage').text('Send Message');
+          $('#sendMessage').css("cursor","default");
           setTimeout("$('p#message').text('')", 5000);
   			}
 
