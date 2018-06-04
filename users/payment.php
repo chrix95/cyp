@@ -217,7 +217,6 @@
           },
 
           submitHandler: function() {
-
             $('#changePass').text('Processing');
             $('#close').hide();
             $('#changePass').css("cursor","wait");
@@ -250,7 +249,9 @@
                 $('#changePass').text('Done');
                 $('#close').show();
                 $('#changePass').css("cursor","default");
-                setTimeout("$('p#message').text('')", 3000);
+                setTimeout("$('p#message').text('')", 2000);
+                $('#passwordForm .form-control').val('');
+                setTimeout("$('#mypasswordModal').modal('hide')", 2500);
               } else if (data == 'Password change failed') {
 
                 $('p#message').css({

@@ -303,15 +303,6 @@ jQuery(document).ready(function () {
   });
 
   /*--------------------------------------------
-  	Markup Order Changing Settings
-  ---------------------------------------------*/
-
-  if ($(window).width() <= 1024) {
-      $("#listing_map_holder").remove().insertBefore($("#listing_filter_holder"));
-  } else {
-      $("#listing_map_holder").remove().insertAfter($("#listing_filter_holder"));
-  }
-  /*--------------------------------------------
   	Equal Height Settings
   ---------------------------------------------*/
   var divHeight = $('.post-model .popular-listing-post').height();
@@ -396,7 +387,7 @@ jQuery(document).ready(function () {
   				$('p#message').text(data);
           $('#sendMessage').text('Send Message');
           $('#sendMessage').css("cursor","default");
-          setTimeout("$('p#message').text('')", 5000);
+          setTimeout("$('p#message').text('')", 2000);
 
   			} else if (data == 'Server error, try again later') {
 
@@ -404,7 +395,7 @@ jQuery(document).ready(function () {
   				$('p#message').text(data);
           $('#sendMessage').text('Send Message');
           $('#sendMessage').css("cursor","default");
-          setTimeout("$('p#message').text('')", 5000);
+          setTimeout("$('p#message').text('')", 3000);
   			}
 
   		})
@@ -498,7 +489,7 @@ jQuery(document).ready(function () {
           $('#regBtn').text('Done');
           $('#close').show();
           $('#regBtn').css("cursor","default");
-  				setTimeout("window.location = 'index.php'", 4000);
+  				setTimeout("window.location = 'index.php'", 1000);
   			} else if (data == 'Server error, try again later') {
 
   				$('p#message').css({
@@ -589,7 +580,8 @@ jQuery(document).ready(function () {
           $('#loginbutton').text('Done');
           $('#check').show();
           $('#loginbutton').css("cursor","default");
-          setTimeout("window.location = 'users/dashboard.php'", 3000);
+          setTimeout("$('#myLoginModal').modal('hide')", 500);
+          setTimeout("window.location = 'users/dashboard.php'", 800);
         } else if (data == 'No payment yet') {
 
           $('p#message').css({
@@ -600,7 +592,7 @@ jQuery(document).ready(function () {
           $('#loginbutton').text('Done');
           $('#check').show();
           $('#loginbutton').css("cursor","default");
-          setTimeout("window.location = 'users/payment.php'", 3000);
+          setTimeout("window.location = 'users/payment.php'", 2000);
         } else if (data == 'Password incorrect') {
 
           $('p#message').css("color", "red");
@@ -684,7 +676,7 @@ jQuery(document).ready(function () {
           $('#adBtn').text('Submit');
           $('#close').show();
           $('#adBtn').css("cursor","default");
-          setTimeout("$('p#message').text('')", 5000);
+          setTimeout("$('p#message').text('')", 2000);
 
   			} else if (data == 'Server error, try again later') {
 
@@ -693,7 +685,7 @@ jQuery(document).ready(function () {
           $('#adBtn').text('Submit');
           $('#close').show();
           $('#adBtn').css("cursor","default");
-          setTimeout("$('p#message').text('')", 5000);
+          setTimeout("$('p#message').text('')", 3000);
   			}
   		})
 
@@ -769,7 +761,7 @@ jQuery(document).ready(function () {
           $('#resetBtn').text('Reset');
           $('#back').show();
           $('#resetBtn').css("cursor","default");
-          setTimeout("$('p#message').text('')", 3000);
+          setTimeout("$('p#message').text('')", 2000);
           $('#loginForm').css("display","block");
           $('#fpassForm').css("display","none");
           $('#fpassForm .form-control').val('');
