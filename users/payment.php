@@ -218,6 +218,9 @@
 
           submitHandler: function() {
 
+            $('#changePass').text('Processing');
+            $('#close').hide();
+            $('#changePass').css("cursor","wait");
             var that = $('#passwordForm'),
                 url = that.attr('action'),
                 type = that.attr('method'),
@@ -244,6 +247,9 @@
                   "font-size": "15px"
                 });
                 $('p#message').text(data);
+                $('#changePass').text('Done');
+                $('#close').show();
+                $('#changePass').css("cursor","default");
                 setTimeout("$('p#message').text('')", 3000);
               } else if (data == 'Password change failed') {
 
@@ -252,12 +258,17 @@
                   "font-size": "15px"
                 });
                 $('p#message').text(data);
+                $('#changePass').text('Done');
+                $('#close').show();
+                $('#changePass').css("cursor","default");
                 setTimeout("$('p#message').text('')", 3000);
               } else if (data == 'Current password incorrect') {
 
                 $('p#message').css("color", "red");
                 $('p#message').text(data);
-                console.log(data);
+                $('#changePass').text('Done');
+                $('#close').show();
+                $('#changePass').css("cursor","default");
                 setTimeout("$('p#message').text('')", 3000);
               }
 

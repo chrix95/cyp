@@ -76,8 +76,8 @@
             </div>
             <div class="col-md-6">
               <div class="pull-right">
-                <button type="submit" name="submitReg" class="btn findOut">Register</button>
-                <button type="button" class="btn findOut closeBtn" data-dismiss="modal">Close</button>
+                <button type="submit" name="submitReg" class="btn findOut" id="regBtn">Register</button>
+                <button type="button" class="btn findOut closeBtn" data-dismiss="modal" id="close">Close</button>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@
             </div>
             <div class="col-md-8">
               <div class="pull-right">
-                <button type="submit" name="submitLogin" class="btn findOut">Login</button>
+                <button type="submit" name="submitLogin" class="btn findOut" id="loginbutton">Login</button>
                 <button type="button" class="btn findOut closeBtn" id="check">Forgot Password</button>
               </div>
             </div>
@@ -148,7 +148,7 @@
             </div>
             <div class="col-md-6">
               <div class="pull-right">
-                <button type="submit" name="submitReset" class="btn findOut">Reset</button>
+                <button type="submit" name="submitReset" class="btn findOut" id="resetBtn">Reset</button>
                 <button type="button" class="btn findOut" id="back">Back</button>
               </div>
             </div>
@@ -205,8 +205,8 @@
             </div>
             <div class="col-md-6">
               <div class="pull-right">
-                <button type="submit" name="submitPassword" class="btn findOut">Submit</button>
-                <button type="button" class="btn findOut closeBtn" data-dismiss="modal">Close</button>
+                <button type="submit" name="submitPassword" class="btn findOut" id="changePass">Submit</button>
+                <button type="button" class="btn findOut closeBtn" data-dismiss="modal" id="close">Close</button>
               </div>
             </div>
           </div>
@@ -333,8 +333,8 @@
             </div>
             <div class="col-md-6">
               <div class="pull-right">
-                <button type="submit" name="submitAdvert" class="btn findOut">Submit</button>
-                <button type="button" class="btn findOut closeBtn" data-dismiss="modal">Close</button>
+                <button type="submit" name="submitAdvert" class="btn findOut" id="adBtn">Submit</button>
+                <button type="button" class="btn findOut closeBtn" data-dismiss="modal" id="close">Close</button>
               </div>
             </div>
           </div>

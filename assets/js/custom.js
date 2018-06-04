@@ -364,7 +364,7 @@ jQuery(document).ready(function () {
 
     submitHandler: function() {
       $('#sendMessage').text('Sending message...');
-      $('#sendMessage').css("cursor","not-allowed");
+      $('#sendMessage').css("cursor","wait");
 
   		var that = $('#contactForm'),
   				url = that.attr('action'),
@@ -466,7 +466,9 @@ jQuery(document).ready(function () {
     },
 
     submitHandler: function() {
-
+      $('#regBtn').text('Registering...');
+      $('#close').hide();
+      $('#regBtn').css("cursor","wait");
   		var that = $('#regForm'),
   				url = that.attr('action'),
   				type = that.attr('method'),
@@ -493,7 +495,9 @@ jQuery(document).ready(function () {
             "font-size": "15px"
           });
   				$('p#message').text(data);
-  				console.log(data);
+          $('#regBtn').text('Done');
+          $('#close').show();
+          $('#regBtn').css("cursor","default");
   				setTimeout("window.location = 'index.php'", 4000);
   			} else if (data == 'Server error, try again later') {
 
@@ -502,7 +506,9 @@ jQuery(document).ready(function () {
             "font-size": "15px"
           });
   				$('p#message').text(data);
-  				console.log(data);
+          $('#regBtn').text('Register');
+          $('#close').show();
+          $('#regBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 2000);
   			} else if (data == 'Phone number already registered') {
 
@@ -511,7 +517,9 @@ jQuery(document).ready(function () {
             "font-size": "15px"
           });
   				$('p#message').text(data);
-  				console.log(data);
+          $('#regBtn').text('Register');
+          $('#close').show();
+          $('#regBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 2000);
   			} else if (data == 'Email address already exist') {
 
@@ -520,7 +528,9 @@ jQuery(document).ready(function () {
             "font-size": "15px"
           });
   				$('p#message').text(data);
-  				console.log(data);
+          $('#regBtn').text('Register');
+          $('#close').show();
+          $('#regBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 2000);
   			}
 
@@ -546,6 +556,9 @@ jQuery(document).ready(function () {
     },
 
     submitHandler: function() {
+      $('#loginbutton').text('Processing...');
+      $('#check').hide();
+      $('#loginbutton').css("cursor","wait");
 
       var that = $('#loginForm'),
           url = that.attr('action'),
@@ -573,6 +586,9 @@ jQuery(document).ready(function () {
             "font-size": "15px"
           });
           $('p#message').text(data);
+          $('#loginbutton').text('Done');
+          $('#check').show();
+          $('#loginbutton').css("cursor","default");
           setTimeout("window.location = 'users/dashboard.php'", 3000);
         } else if (data == 'No payment yet') {
 
@@ -581,18 +597,25 @@ jQuery(document).ready(function () {
             "font-size": "15px"
           });
           $('p#message').text('Login Successful. Please wait...');
+          $('#loginbutton').text('Done');
+          $('#check').show();
+          $('#loginbutton').css("cursor","default");
           setTimeout("window.location = 'users/payment.php'", 3000);
         } else if (data == 'Password incorrect') {
 
           $('p#message').css("color", "red");
           $('p#message').text(data);
-          console.log(data);
+          $('#loginbutton').text('Login');
+          $('#check').show();
+          $('#loginbutton').css("cursor","default");
           setTimeout("$('p#message').text('')", 2000);
         } else if (data == 'Sorry, email doesnt exist') {
 
           $('p#message').css("color", "red");
           $('p#message').text(data);
-          console.log(data);
+          $('#loginbutton').text('Login');
+          $('#check').show();
+          $('#loginbutton').css("cursor","default");
           setTimeout("$('p#message').text('')", 2000);
         }
 
@@ -627,7 +650,9 @@ jQuery(document).ready(function () {
     },
 
     submitHandler: function() {
-
+      $('#adBtn').text('Sending...');
+      $('#close').hide();
+      $('#adBtn').css("cursor","wait");
   		var that = $('#advertRequestForm'),
   				url = that.attr('action'),
   				type = that.attr('method'),
@@ -656,14 +681,18 @@ jQuery(document).ready(function () {
           });
           $('.form-control').val('');
   				$('p#message').text(data);
-  				console.log(data);
+          $('#adBtn').text('Submit');
+          $('#close').show();
+          $('#adBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 5000);
 
   			} else if (data == 'Server error, try again later') {
 
   				$('p#message').css("color", "#fff");
   				$('p#message').text(data);
-  				console.log(data);
+          $('#adBtn').text('Submit');
+          $('#close').show();
+          $('#adBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 5000);
   			}
   		})
@@ -708,7 +737,9 @@ jQuery(document).ready(function () {
     },
 
     submitHandler: function() {
-
+      $('#resetBtn').text('Resetting...');
+      $('#back').hide();
+      $('#resetBtn').css("cursor","wait");
       var that = $('#fpassForm'),
           url = that.attr('action'),
           type = that.attr('method'),
@@ -729,12 +760,15 @@ jQuery(document).ready(function () {
       })
 
       .done(function(data){
-        if (data == 'Recovery Password has been sent to email') {
+        if (data == 'Password sent to email') {
           $('p#message').css({
             "color":"#fff",
             "font-size": "15px"
           });
           $('p#message').text(data);
+          $('#resetBtn').text('Reset');
+          $('#back').show();
+          $('#resetBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 3000);
           $('#loginForm').css("display","block");
           $('#fpassForm').css("display","none");
@@ -743,13 +777,17 @@ jQuery(document).ready(function () {
 
           $('p#message').css("color", "#F3AF00");
           $('p#message').text(data);
-          console.log(data);
+          $('#resetBtn').text('Reset');
+          $('#back').show();
+          $('#resetBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 2000);
         } else if (data == 'Email matches no record') {
 
           $('p#message').css("color", "#F3AF00");
           $('p#message').text(data);
-          console.log(data);
+          $('#resetBtn').text('Reset');
+          $('#back').show();
+          $('#resetBtn').css("cursor","default");
           setTimeout("$('p#message').text('')", 2000);
         }
 

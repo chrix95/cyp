@@ -14,7 +14,7 @@
       $to = 'info@countryyellowpages.com';
       $subject = 'New Client Alert!!!';
       $from = 'countryyellowpages.net';
-      $body = "Hi, \n\n
+      $body = "Sir / Madam, \n\n
              Kindly attend to this message as a new client alert has been received.
              The details are: \n\n
              Name: " . $name ." \n\n
@@ -22,10 +22,9 @@
              Message: " . $message . " \n\n
              Please ensure that clients are treated with high quality measures.";
 
-      $success1 = mail($to, $subject, $body , $from);
-      $success2 = mail('engchris95@gmail.com', $subject, $body , $from);
+      include 'index.php';
 
-      if ($success1 && $success2) {
+      if ($success) {
         echo "Message has been sent.";
       } else {
         echo "Server error, try again later";
@@ -264,7 +263,7 @@
 
            mail($to, $subject, $body , 'info@countryyellowpages.net');
 
-          echo "Recovery Password has been sent to email";
+          echo "Password sent to email";
 
         } else {
 
