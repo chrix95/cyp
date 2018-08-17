@@ -11,18 +11,18 @@
       $email = htmlentities(strip_tags(trim($_POST['email'])));
       $message = htmlentities(strip_tags(trim($_POST['message'])));
 
-      $to = 'info@countryyellowpages.com';
+      $to = 'info@countryyellowpages.net';
       $subject = 'New Client Alert!!!';
-      $from = 'countryyellowpages.net';
-      $body = "Sir / Madam, \n\n
+      // $from = 'countryyellowpages.net';
+      $body = "Sir / Madam, <br><br>
              Kindly attend to this message as a new client alert has been received.
-             The details are: \n\n
-             Name: " . $name ." \n\n
-             Email: " . $email ." \n\n
-             Message: " . $message . " \n\n
+             The details are: <br><br>
+             Name: " . $name ." <br><br>
+             Email: " . $email ." <br><br>
+             Message: " . $message . " <br><br>
              Please ensure that clients are treated with high quality measures.";
 
-      include 'index.php';
+      require 'index.php';
 
       if ($success) {
         echo "Message has been sent.";
@@ -195,25 +195,23 @@
       $tel = htmlentities(strip_tags(trim($_POST['tel'])));
       $website = htmlentities(strip_tags(trim($_POST['website'])));
 
-      $to = 'info@countryyellowpages.com';
+      $to = 'info@countryyellowpages.net';
       $subject = 'Advert Placement Information';
-      $from = 'countryyellowpages.net';
-      $body = "Hi, \n\n
+      // $from = 'countryyellowpages.net';
+      $body = "Hi, <br><br>
              The following client requires to advertize his business on country yellow pages website.
-             Kindly find the details below: \n\n
-             Name: " . $name ." \n\n
-             Email: " . $email ." \n\n
-             Address: " . $address ." \n\n
-             Telephone: " . $tel . " \n\n
-             Website: " . $website . " \n\n
+             Kindly find the details below: <br><br>
+             Name: " . $name ." <br><br>
+             Email: " . $email ." <br><br>
+             Address: " . $address ." <br><br>
+             Telephone: " . $tel . " <br><br>
+             Website: " . $website . " <br><br>
 
              Kindly contact client via mail or phone ASAP. Thank you.";
 
-      $success1 = mail($to, $subject, $body , $from);
-      $success2 = mail('engchris95@gmail.com', $subject, $body , $from);
-      $success3 = mail('saviourjohnson92@gmail.com', $subject, $body , $from);
+      require 'index.php';
 
-      if ($success1 && $success2) {
+      if ($success) {
         echo "Message has been sent.";
       } else {
         echo "Server error, try again later";
@@ -253,17 +251,21 @@
 
           // send mail to email address
           $to = $email;
-           $subject = 'CYP Password Recovery';
-           $body = "Hi " .$name. ",\n\n
+          $subject = 'CYP Password Recovery';
+          $body = "Hi " .$name. ",<br><br>
                    We all forget our password most time, it's no big deal.\n\n
-                   Your new login details are: \n\n
-                   Email: " . $email ."\n\n
-                   Password: " . $random_password . "\n\n
+                   Your new login details are: <br><br>
+                   Email: " . $email ."<br><br>
+                   Password: " . $random_password . "<br><br>
                    Please log in with the details provided. And do not reply this mail." ;
 
-           mail($to, $subject, $body , 'info@countryyellowpages.net');
+			require 'Pindex.php';
 
-          echo "Password sent to email";
+			if ($success) {
+				echo "Password sent to email";
+			} else {
+
+			}
 
         } else {
 

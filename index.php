@@ -29,7 +29,7 @@
 </head>
 
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
     <div class="main-wrap">
         <!-- Main Navigation -->
         <?php include 'header.php'; ?>
@@ -48,7 +48,7 @@
                             <label class="labels">Category</label>
           									<div class="input-group">
                               <select name="category" id="category" class="form-control locationStyle">
-                                <option value="" selected disabled>Please select</option>
+                                <option value="" selected disabled>Please Select</option>
                                 <?php include 'resources/category.php'; ?>
                               </select>
           									</div>
@@ -60,7 +60,7 @@
                             <label class="labels">Location</label>
           									<div class="input-group">
                               <select class="form-control locationStyle" name="location" id="location">
-                                <option value="" selected disabled>Please select</option>
+                                <option value="" selected disabled>Please Select</option>
                               </select>
           									</div>
                             <label id="location-error" class="error" for="location"></label>

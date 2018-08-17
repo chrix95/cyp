@@ -18,11 +18,6 @@ try {
     //Recipients
     $mail->setFrom('info@countryyellowpages.net', 'CYP Website');
     $mail->addAddress($to);     // Add a recipient
-    // $mail->addAddress('info@countryyellowpages.com', 'Joe User');     // Add a recipient
-    // $mail->addAddress('ellen@example.com');               // Name is optional
-    // $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addBCC('engchris95@gmail.com', 'Christopher Okokon');
-    $mail->addBCC('saviourjohnson92@gmail.com', 'Saviour Johnson');
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML

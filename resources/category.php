@@ -5,8 +5,9 @@
   $result = $pull_category->fetchALL(PDO::FETCH_OBJ);
   // var_dump($result);
   foreach ($result as $key => $value) {
+    $lowercase = strtolower($value->companyCategory);
 ?>
-  <option><?php echo $value->companyCategory;?></option>
+  <option><?php echo ucwords($lowercase);?></option>
 
 <?php
   }

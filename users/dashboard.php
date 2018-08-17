@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body class="dashboard">
-  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
     <div class="main-wrap">
 		<!-- Main Navigation -->
     <?php include 'header.php'; ?>
